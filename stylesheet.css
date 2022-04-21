@@ -14,3 +14,51 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 }
 
 /* == END RESET =========================================== */
+
+
+/* LAYOUT */
+/* Default layout, no grid or flexbox, single column design for mobile */
+
+/* Set padding so that content is not against edge of viewport */
+header, nav, main, footer {
+    padding: 1em;
+}
+
+/* Set image to the size of it's container/parent element */
+img {
+    max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+nav {
+    font-size: 1.5rem;
+}
+
+/* COLOURS AND BORDERS */
+
+
+/* BACKGROUND IMAGES */
+
+
+/* RESPONSIVENESS */
