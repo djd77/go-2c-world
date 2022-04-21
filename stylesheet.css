@@ -29,6 +29,56 @@ img {
     max-width: 100%;
 }
 
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    /* fix position so scrolling doesn't affect menu icon */
+    position: fixed;
+    /* z-index ensures icon stays in front of everything else */
+    z-index: 100;
+    /* place at top right of screen */
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background: #FFFFFF;
+    color:#01648B;
+    cursor: pointer;
+}
+
+.closeIcon {
+    /* Hide the close icon by default */
+    display: none;
+}
+
+.menu {
+    /* Fix position so scrolling doesn't affect menu */
+    position: fixed;
+    /* Hide menu by default above screen */
+    transform: translateY(-100%);
+    /* Animate menu on open/close with a slide effect. -Optional- */
+    transition: transform 0.2s;
+    /* Open menu full-screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #01648B;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.menuItem {
+    color: #FFFFFF;
+}
+
+.showMenu {
+    /* This class is added/removed from the menu with JavaScript to show/hide the menu */
+    transform: translateY(0);
+}
+
 /* VERTICAL SECTION HEIGHT */
 /* Min height of content sections */
 main {

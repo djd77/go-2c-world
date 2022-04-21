@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylesheet.css">
+        <!-- Hamburger menu icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>GO 2C World | Home</title>
     </head>
     <body>
@@ -15,12 +17,16 @@
                 <img src="./images/search_box_placeholder.png" alt="Image of a search box. A placeholder for an actual search box">
             </figure>
             <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./contact-us.html">Contact Us</a></li>
-                    <li><a href="./countries.html">Countries</a></li>
+                <ul class="menu">
+                    <li><a class="menuItem" href="./index.html">Home</a></li>
+                    <li><a class="menuItem" href="./contact-us.html">Contact Us</a></li>
+                    <li><a class="menuItem" href="./countries.html">Countries</a></li>
                 </ul>
+                <button class="hamburger">
+                    <i class="menuIcon material-icons">menu</i>
+                </button>
             </nav>
+            <script type="text/javascript" src="./js/hamburgerMenu.js"></script>
         </header>
         <main>
             <div class="title-container">
