@@ -17,7 +17,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 
 
 /* LAYOUT */
-/* Default layout, no grid or flexbox, single column design for mobile */
+/* Default layout design for mobile */
 
 /* Set padding so that content is not against edge of viewport */
 header, nav, main, footer {
@@ -27,6 +27,32 @@ header, nav, main, footer {
 /* Set image to the size of it's container/parent element */
 img {
     max-width: 100%;
+}
+
+/* VERTICAL SECTION HEIGHT */
+/* Min height of content sections */
+main {
+    min-height: 50rem;
+}
+
+.aside-one-content-overview {
+    min-height: 30rem;
+}
+
+.aside-two-about-us {
+    min-height: 30rem;
+}
+
+.aside-three-weekly-deal {
+    min-height: 50rem;
+}
+
+.aside-four-newsletter {
+    min-height: 30rem;
+}
+
+.footer {
+    min-height: 30rem;
 }
 
 /* TYPOGRAPHY */
@@ -55,10 +81,49 @@ nav {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* COLOURS AND BORDERS */
 
+body {
+    color: #01648B;
+}
+
+a {
+    color: #01648B;
+}
+
+header {
+    background-color: #FFFFFF;
+}
 
 /* BACKGROUND IMAGES */
+
+main {
+    background-image: url(./images/woman-background-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300% auto;
+}
+
+.aside-three-weekly-deal {
+    background-image: url(./images/woman-background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300% auto;
+}
+
+/* IMAGES */
+
+
+/* SECTION LAYOUTS */
+
 
 
 /* RESPONSIVENESS */
