@@ -144,7 +144,7 @@ ul {
 
 .title-container p {
     font-size: 1.1rem;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 /* aside one text */
@@ -159,13 +159,19 @@ ul {
 
 /* aside three text */
 .weekly-deal-container h3 {
-    font-weight: 100;
+    font-weight: normal;
     font-size: 1.2rem;
     line-height: 2rem;
 }
 
 /* button text */
-.deal-button, .signup-button {
+.deal-button {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.signup-button {
     text-align: center;
     font-size: 1.2rem;
     font-weight: normal;
@@ -197,10 +203,32 @@ header {
     color: #FFFFFF;
 }
 /* buttons */
-.deal-button, .signup-button {
+.deal-button {
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
+}
+
+.signup-button {
+    color: #01648B;
+    border: 1px solid #01648B;
+    background-color: transparent;
+}
+
+/* text box */
+.signup-box {
+    color: #01648B;
+    border: 1px solid #01648B;
+    background-color: transparent;
+}
+
+.aside-four-newsletter {
+    background-color: #FFFFFF;
+}
+
+.newsletter-signup-container {
+    background-color: #FFFFFF;
+    border: 2px solid #01648B;
 }
 
 footer {
@@ -317,4 +345,30 @@ aside {
 .weekly-deal-container h3 {
     padding: 1.3em 0;
 }
+
+/* aside four layout */
+.aside-four-newsletter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-signup-container {
+    padding: 3rem;
+}
+
+.left-signup-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.right-signup-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
 /* -----RESPONSIVENESS----- */
