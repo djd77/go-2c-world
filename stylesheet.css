@@ -20,7 +20,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* Default layout design for mobile */
 
 /* Set padding so that content is not against edge of viewport */
-header, nav, main, footer {
+header, nav, main, aside, footer {
     padding: 1em;
 }
 
@@ -109,12 +109,11 @@ main {
 
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: normal;
 }
 
 h2 {
@@ -137,6 +136,16 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.title-container h1 {
+    line-height: 1.5em;
+    font-size: 3.5rem;
+}
+
+.title-container p {
+    font-size: 1.2rem;
+    
 }
 
 /* COLOURS AND BORDERS */
@@ -171,9 +180,42 @@ main {
 
 /* IMAGES */
 
+/* hide search bar (placeholder image) on small screens */
+@media (max-width: 600px) {
+    .search-placeholder {
+        display: none;
+    }
+}
 
-/* SECTION LAYOUTS */
+.header-logo {
+    width: 30%
+}
 
 
+
+/* SECTION AND CONTAINER LAYOUTS */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    color: #FFFFFF;
+    display: flex;
+}
+
+.title-container {
+    padding: 2.8em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.title-container p {
+    padding-right: 6em;    
+}
 
 /* RESPONSIVENESS */
