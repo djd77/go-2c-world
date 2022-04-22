@@ -29,7 +29,6 @@ img {
     max-width: 100%;
 }
 
-
 /* -----HAMBURGER MENU----- */
 
 .hamburger {
@@ -152,6 +151,10 @@ ul {
     font-weight: bold;
 }
 
+.about-us-text h2 {
+    font-weight: bold;
+}
+
 /* -----COLOURS AND BORDERS----- */
 
 body {
@@ -260,5 +263,16 @@ aside {
 
 /* aside two elements */
 
+.about-us-container {
+    padding: 1.2em 2.6em;
+}
+
+.about-us-text {
+    padding: 0 2.2em;
+}
+
+.about-us-text p {
+    padding: 1.3em 0 2.2em 0;
+}
 
 /* -----RESPONSIVENESS----- */
