@@ -173,6 +173,10 @@ header {
     background-color: #eef2f2;
 }
 
+.aside-three-weekly-deal {
+    color: #FFFFFF;
+}
+
 footer {
     background-color: #eef2f2;
 }
@@ -188,7 +192,7 @@ main {
 .aside-three-weekly-deal {
     background-image: url(./images/woman-background-2.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: -15rem 0;
     background-size: 300% auto;
 }
 
@@ -267,6 +271,12 @@ aside {
 
 .about-us-text p {
     padding: 1.3em 0 2.2em 0;
+}
+
+/* aside three layout */
+
+.weekly-deal-container {
+    padding: 0 2.6em;
 }
 
 /* -----RESPONSIVENESS----- */
