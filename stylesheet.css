@@ -16,7 +16,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* == END RESET =========================================== */
 
 
-/* LAYOUT */
+/* -----LAYOUT----- */
 /* Default layout design for mobile */
 
 /* Set padding so that content is not against edge of viewport */
@@ -30,7 +30,7 @@ img {
 }
 
 
-/* HAMBURGER MENU */
+/* -----HAMBURGER MENU----- */
 
 .hamburger {
     /* fix position so scrolling doesn't affect menu icon */
@@ -79,7 +79,7 @@ img {
     transform: translateY(0);
 }
 
-/* VERTICAL SECTION HEIGHT */
+/* -----VERTICAL SECTION HEIGHT----- */
 /* Min height of content sections */
 main {
     min-height: 50rem;
@@ -105,7 +105,7 @@ main {
     min-height: 30rem;
 }
 
-/* TYPOGRAPHY */
+/* -----TYPOGRAPHY----- */
 
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -152,7 +152,7 @@ ul {
     font-weight: bold;
 }
 
-/* COLOURS AND BORDERS */
+/* -----COLOURS AND BORDERS----- */
 
 body {
     color: #01648B;
@@ -166,7 +166,14 @@ header {
     background-color: #FFFFFF;
 }
 
-/* BACKGROUND IMAGES */
+.aside-two-about-us {
+    background-color: #eef2f2;
+}
+
+footer {
+    background-color: #eef2f2;
+}
+/* -----BACKGROUND IMAGES----- */
 
 main {
     background-image: url(./images/woman-background-1.jpg);
@@ -182,7 +189,7 @@ main {
     background-size: 300% auto;
 }
 
-/* IMAGES */
+/* -----IMAGES----- */
 
 /* hide search bar (placeholder image) on small screens */
 @media (max-width: 600px) {
@@ -196,7 +203,7 @@ main {
 }
 
 
-/* SECTION AND CONTAINER LAYOUTS */
+/* -----SECTION AND CONTAINER LAYOUTS----- */
 
 header {
     display: flex;
@@ -204,6 +211,7 @@ header {
     align-items: center;
 }
 
+/* main elements */
 main {
     color: #FFFFFF;
     display: flex;
@@ -221,9 +229,12 @@ main {
     padding-right: 6em;    
 }
 
-.aside-one-content-overview {
+/* all aside elements */
+aside {
     padding: 2em 1em;
 }
+
+/* aside one elements */
 
 .icons-container {
     display: flex;
@@ -247,4 +258,7 @@ main {
     margin: 0 auto;
 }
 
-/* RESPONSIVENESS */
+/* aside two elements */
+
+
+/* -----RESPONSIVENESS----- */
