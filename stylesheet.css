@@ -222,21 +222,18 @@ header {
 }
 
 /* main layout */
+
 main {
+    padding: 2.2em 1em;
     color: #FFFFFF;
-    display: flex;
 }
 
 .title-container {
-    padding: 2.8em 3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    padding: 1.5rem 3.8rem;
 }
 
 .title-container p {
-    padding-right: 6em;    
+    padding: 12rem 5rem 0 0;
 }
 
 /* padding for all aside elements */
