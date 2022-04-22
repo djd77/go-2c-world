@@ -189,7 +189,17 @@ ul {
 }
 
 footer {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-copyright ul li {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
 /* -----COLOURS AND BORDERS----- */
@@ -245,6 +255,16 @@ header {
 footer {
     background-color: #eef2f2;
 }
+
+/* -----LINK AND BUTTON HOVER----- */
+.footer-right ul li a:hover {
+    color: #86DBBB;
+}
+
+.signup-button:hover, .deal-button:hover, .hamburger:hover {
+    background-color:#86DBBB;
+}
+
 /* -----BACKGROUND IMAGES----- */
 
 main {
@@ -319,8 +339,8 @@ main {
     padding: 12rem 5rem 1rem 0;
 }
 
-/* padding for all aside elements */
-aside {
+/* padding for all aside elements and footer element */
+aside, footer {
     padding: 2.2em 1em;
 }
 
@@ -401,6 +421,16 @@ aside {
     margin: 1rem 0;
     padding: 0.9rem 0;
     width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-copyright {
+    padding-top: 1.5rem;
 }
 
 /* -----RESPONSIVENESS----- */
