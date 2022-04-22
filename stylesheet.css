@@ -201,20 +201,27 @@ main {
     }
 }
 
+/* logo in header */
 .header-logo {
     width: 30%
+}
+
+/* icons in aside two */
+.icon {
+    width: 40%;
 }
 
 
 /* -----SECTION AND CONTAINER LAYOUTS----- */
 
+/* header layout */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* main elements */
+/* main layout */
 main {
     color: #FFFFFF;
     display: flex;
@@ -232,36 +239,26 @@ main {
     padding-right: 6em;    
 }
 
-/* all aside elements */
+/* padding for all aside elements */
 aside {
-    padding: 2em 1em;
+    padding: 2.2em 1em;
 }
 
-/* aside one elements */
+/* aside one layout */
 
 .icons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 2.6em;
 }
 
 .single-icon-container {
-    width: 50%;
-    padding: 2.8em 0;
+    padding: 2.5rem 4rem;
 }
 
 .single-icon-container h3 {
-    padding-top: 0.8em;
-    padding-bottom: 0.3em;
+    padding: 0.8rem 0 0.8rem 0;
 }
 
-.icon {
-    width: 50%;
-    margin: 0 auto;
-}
-
-/* aside two elements */
+/* aside two layout */
 
 .about-us-container {
     padding: 1.2em 2.6em;
