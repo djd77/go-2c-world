@@ -424,8 +424,9 @@ aside, footer {
 
 .signup-box {
     margin: 1rem 0;
-    padding: 0.9rem 0;
+    padding: 0.4rem 0.2rem;
     width: 100%;
+    font-size:1.3rem;
 }
 
 .footer-container {
