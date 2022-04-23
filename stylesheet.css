@@ -37,7 +37,7 @@ img {
     /* z-index ensures icon stays in front of everything else */
     z-index: 100;
     /* place at top right of screen */
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     padding: 0.5rem;
     border: none;
@@ -79,8 +79,8 @@ img {
 }
 
 /* -----VERTICAL SECTION HEIGHT----- */
-/* Min height of content sections */
-main {
+/* Set min height so background image is visible */
+/*main {
     min-height: 55rem;
 }
 
@@ -91,18 +91,18 @@ main {
 .aside-two-about-us {
     min-height: 30rem;
 }
-
+*/
 .aside-three-weekly-deal {
     min-height: 50rem;
 }
-
+/*
 .aside-four-newsletter {
     min-height: 30rem;
 }
 
 .footer {
     min-height: 30rem;
-}
+}*/
 
 /* -----TYPOGRAPHY----- */
 
@@ -112,7 +112,7 @@ body {
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -137,9 +137,15 @@ ul {
     list-style-type: none;
 }
 
+/* menu text */
+.menu li {
+    font-size: 2rem;
+}
+
 /* main text */
 .title-container h1 {
     line-height: 1.5em;
+    font-weight: 700;
 }
 
 .title-container p {
@@ -164,18 +170,12 @@ ul {
     line-height: 2rem;
 }
 
-/* button text */
 .deal-button {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.signup-button {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
 
 /* aside four text */
 .newsletter-signup-container p {
@@ -184,12 +184,19 @@ ul {
 
 .newsletter-signup-container h2 {
     line-height: 2rem;
-    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.signup-button {
+    text-align: center;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
+/* footer text */
+
 footer {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-right {
@@ -199,10 +206,16 @@ footer {
 .footer-copyright ul li {
     font-weight: lighter;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 /* -----COLOURS AND BORDERS----- */
+
+/* main font = #01648B */
+/* light font = #FFFFFF */
+/* light green hover = #86DBBB */
+/* about us and footer background #eef2f2 */
+/* shadow colour = #535353 */
 
 body {
     color: #01648B;
@@ -215,6 +228,7 @@ a {
 header {
     background-color: #FFFFFF;
 }
+
 
 .aside-two-about-us {
     background-color: #eef2f2;
@@ -250,6 +264,7 @@ header {
 .newsletter-signup-container {
     background-color: #FFFFFF;
     border: 2px solid #01648B;
+    box-shadow: 0 0 0.6em #535353;
 }
 
 footer {
@@ -292,12 +307,12 @@ main {
 
 /* logo in header */
 .header-logo {
-    width: 30%
+    width: 35%
 }
 
 /* icons in aside two */
 .icon {
-    width: 40%;
+    width: 45%;
 }
 
 /* images in aside four */
@@ -312,6 +327,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* menu layout */
+.menu {
+    padding: 3rem;
+}
+
+.menu li {
+    padding: 1.2rem 0;
 }
 
 /* button layout */
@@ -332,7 +357,7 @@ main {
 }
 
 .title-container {
-    padding: 1.5rem 3.8rem;
+    padding: 1.5rem 3rem;
 }
 
 .title-container p {
@@ -350,7 +375,7 @@ aside, footer {
 }
 
 .single-icon-container {
-    padding: 2.5rem 4rem;
+    padding: 2.3rem 3.2rem;
 }
 
 .single-icon-container h3 {
@@ -375,11 +400,11 @@ aside, footer {
     display: flex;
     align-items: end;
     justify-content: center;
-    padding: 0 2.6em 3em 2.6em;
+    padding: 0 2.6em 3.5em 2.6em;
 }
 
 .weekly-deal-container {
-    padding: 0 2.6em;
+    padding: 0 1em 3em 1em;
 }
 
 .weekly-deal-container h3 {
@@ -409,7 +434,7 @@ aside, footer {
 }
 
 .newsletter-signup-container {
-    margin: 0 3.8rem;
+    margin: 2rem 3.8rem;
     padding: 2rem 2rem;
 }
 
