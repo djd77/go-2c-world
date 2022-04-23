@@ -165,8 +165,8 @@ ul {
 /* aside three text */
 .weekly-deal-container h3 {
     font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.4em;
 }
 
 .deal-button {
@@ -319,17 +319,6 @@ main {
 /* menu layout */
 
 
-/* button layout */
-.deal-button {
-    padding: 0.8em 0;
-    width: 100%;
-}
-
-.signup-button {
-    padding: 0.7em 0;
-    width: 70%;
-}
-
 /* main layout */
 main {
     padding: 2.2em 1em;
@@ -388,7 +377,13 @@ aside, footer {
 }
 
 .weekly-deal-container h3 {
-    padding: 1.3em 0;
+    padding: 1.5em 0;
+}
+
+.deal-button {
+    display: block;
+    padding: 1em 0;
+    width: 100%;
 }
 
 /* aside four layout */
@@ -427,6 +422,12 @@ aside, footer {
     padding: 0.4rem 0.2rem;
     width: 100%;
     font-size:1.3rem;
+}
+
+.signup-button {
+    display: block;
+    padding: 0.7em 0;
+    width: 70%;
 }
 
 .footer-container {
