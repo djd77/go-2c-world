@@ -1,27 +1,24 @@
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const menuIcon = document.querySelector(".menuIcon");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
-// Clicking on the hamburger menu calls toggleMenu
-function toggleMenu() {
-  // If menu contains the showMenu class, it is removed to hide the menu
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    // If menu does not contain showMenu, then it is added to show the menu
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
+// Event listener to open menu when hamburger menu is clicked
+hamburger.addEventListener("click", mobileMenu);
+
+//Event listener to close menu when either the hamburger menu is clicked
+// when the menu is open, or a link in the menu is clicked
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+	// function adds an "active" class on .hamburger and .nav-menu
+	// which makes the menu open
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
 }
 
-hamburger.addEventListener("click", toggleMenu);
-
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
+function closeMenu() {
+	// removes "active" class from .hamburger and .nav-menu which
+	// makes the menu close
+	hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

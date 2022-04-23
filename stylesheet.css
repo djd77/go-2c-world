@@ -1,4 +1,5 @@
 /* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     /* Cancel out some differences between browser defaults */
@@ -30,53 +31,55 @@ img {
 }
 
 /* -----HAMBURGER MENU----- */
-
-.hamburger {
-    /* fix position so scrolling doesn't affect menu icon */
-    position: fixed;
-    /* z-index ensures icon stays in front of everything else */
-    z-index: 100;
-    /* place at top right of screen */
-    top: 1.5rem;
-    right: 1rem;
-    padding: 0.5rem;
-    border: none;
-    background: #FFFFFF;
-    color:#01648B;
-    cursor: pointer;
+/* header and navbar style */
+.header {
+    border-bottom: 1px solid black;
+    background-color: #FFFFFF;
 }
 
-.closeIcon {
-    /* Hide the close icon by default */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* hamburger button style */
+.hamburger {
     display: none;
 }
 
-.menu {
-    /* Fix position so scrolling doesn't affect menu */
-    position: fixed;
-    /* Hide menu by default above screen */
-    transform: translateY(-100%);
-    /* Animate menu on open/close with a slide effect. -Optional- */
-    transition: transform 0.2s;
-    /* Open menu full-screen */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: #01648B;
-    list-style: none;
-    padding-top: 4rem;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #01648B;
 }
 
-.menuItem {
-    color: #FFFFFF;
+/* basic styles for other menu elements */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.showMenu {
-    /* This class is added/removed from the menu with JavaScript to show/hide the menu */
-    transform: translateY(0);
+.nav-item {
+    margin-left: 5rem;
 }
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#01648B;
+}
+
+.nav-link:hover {
+    color:#86DBBB;
+}
+
 
 /* -----VERTICAL SECTION HEIGHT----- */
 /* Set min height so background image is visible */
@@ -137,10 +140,6 @@ ul {
     list-style-type: none;
 }
 
-/* menu text */
-.menu li {
-    font-size: 2rem;
-}
 
 /* main text */
 .title-container h1 {
@@ -298,13 +297,6 @@ main {
 
 /* -----IMAGES----- */
 
-/* hide search bar (placeholder image) on small screens */
-@media (max-width: 600px) {
-    .search-placeholder {
-        display: none;
-    }
-}
-
 /* logo in header */
 .header-logo {
     width: 35%
@@ -323,21 +315,9 @@ main {
 /* -----SECTION AND CONTAINER LAYOUTS----- */
 
 /* header layout */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 /* menu layout */
-.menu {
-    padding: 3rem;
-}
 
-.menu li {
-    padding: 1.2rem 0;
-}
 
 /* button layout */
 .deal-button {
@@ -459,3 +439,67 @@ aside, footer {
 }
 
 /* -----RESPONSIVENESS----- */
+
+/* hide search bar (placeholder image) on small screens */
+@media (max-width: 40rem) {
+    .search-placeholder {
+        display: none;
+    }
+}
+
+/* hamburger menu responsive */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        /* hides nav menu */
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color:#FFFFFF;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    
+    .nav-menu.active {
+        /* JS uses this to add the 'active' class to the nav-menu
+        which shows the menu when hamburger is clicked */
+        left: 0;
+        padding: 2rem;
+    }
+
+    .nav-menu.active li {
+        padding: 1.7rem;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        /* shows hamburger menu */
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 1rem;
+        border: none;
+    }
+
+    /* use "active" class on hamburger to create animation when the
+    hamburger menu is clicked */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
