@@ -544,27 +544,30 @@ aside, footer {
     }
 
     .title-container {
-        width: 43%;
-        height: 50%;
+        /*width: 43%;
+        height: 50%;*/
+        width: 40rem;
+        height: 20rem;
         padding: 3rem;
         margin-left: 5rem;
         border: 2px solid #FFFFFF;
         background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: start;
     }
 
     .title-container h1 {
         width: 100%;
-        font-size: 4rem;
-        padding-bottom: 2rem;
+        font-size: 3rem;
+        /*padding-bottom: 2rem;*/
     }
 
     .title-container p {
-        width: 100%;
-        padding: 0 7rem 0 0;
+        width: 29rem;
+        line-height: 1.6rem;
+        padding: 0;
     }
 
     .aside-one-content-overview {
