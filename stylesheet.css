@@ -613,8 +613,12 @@ aside, footer {
     .icons-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: top;
         padding: 5em 0;
+    }
+
+    .single-icon-container {
+        width: 18em;
     }
 
     .icon {
