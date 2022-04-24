@@ -556,10 +556,10 @@ aside, footer {
         grid-template-columns: 1fr 4fr 1fr;
     }
 
+    /* header styles */
     header {
         grid-column: 1/4;
     }
-
 
     .navbar {
         width: 100%;
@@ -573,6 +573,8 @@ aside, footer {
         font-size: 1.3rem;
     }
 
+
+    /* main styles */
     main {
         grid-column: 1/4;
         display: flex;
@@ -603,22 +605,39 @@ aside, footer {
         padding: 0;
     }
 
+    /* aside one styles */
     .aside-one-content-overview {
         grid-column: 2/3;
     }
 
+    .icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5em 0;
+    }
+
+    .icon {
+        height: 8em;
+        width: auto;
+    }
+
+    /* aside two styles */
     .aside-two-about-us {
         grid-column: 1/4;
     }
 
+    /* aside three styles */
     .aside-three-weekly-deal {
         grid-column: 1/4;
     }
 
+    /* aside four styles */
     .aside-four-newsletter {
         grid-column: 1/4;
     }
 
+    /* footer styles */
     footer {
         grid-column: 1/4;
     }
