@@ -301,11 +301,6 @@ main {
 
 /* -----SECTION AND CONTAINER LAYOUTS----- */
 
-/* header layout */
-
-/* menu layout */
-
-
 /* main layout */
 main {
     padding: 2.2em 1em;
@@ -429,15 +424,15 @@ aside, footer {
 
 /* -----RESPONSIVENESS----- */
 
-/* hide search bar (placeholder image) on small screens */
-@media (max-width: 40rem) {
+/* hide search bar (placeholder) on small screens */
+@media (max-width: 48rem) {
     .search-placeholder {
         display: none;
     }
 }
 
 /* hamburger menu responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
@@ -491,4 +486,104 @@ aside, footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+/* layout for larger screens */
+@media only screen and (min-width: 48rem) {
+    /* -----IMAGES----- */
+    main {
+        background-image: url(./images/woman-background-1.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100% auto;
+    }
+    
+    .aside-three-weekly-deal {
+        background-image: url(./images/woman-background-2.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100% auto;
+    }
+
+    .logo-img {
+        max-width: 40%;
+    }
+
+    .search-placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-img {
+        max-width: 50%;
+        display: grid;
+        align-items: center;
+    }
+
+    /* -----CONTENT LAYOUT----- */
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    header {
+        grid-column: 1/4;
+    }
+
+    .nav-link {
+        white-space: nowrap;
+        padding: 0 1.5rem;
+    }
+
+    main {
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-container {
+        width: 43%;
+        height: 50%;
+        padding: 3rem;
+        margin-left: 5rem;
+        border: 2px solid #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-container h1 {
+        width: 100%;
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .title-container p {
+        width: 100%;
+        padding: 0 7rem 0 0;
+    }
+
+    .aside-one-content-overview {
+        grid-column: 2/3;
+    }
+
+    .aside-two-about-us {
+        grid-column: 1/4;
+    }
+
+    .aside-three-weekly-deal {
+        grid-column: 1/4;
+    }
+
+    .aside-four-newsletter {
+        grid-column: 1/4;
+    }
+
+    footer {
+        grid-column: 1/4;
+    }
 }
