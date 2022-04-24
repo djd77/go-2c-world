@@ -285,8 +285,9 @@ main {
 /* -----IMAGES----- */
 
 /* logo in header */
-.header-logo {
-    width: 35%
+.logo-img {
+    min-width: 6em;
+    max-width: 6em;
 }
 
 /* icons in aside two */
@@ -424,9 +425,9 @@ aside, footer {
 
 /* -----RESPONSIVENESS----- */
 
-/* hide search bar (placeholder) on small screens */
+/* hide search bar on small screens */
 @media (max-width: 48rem) {
-    .search-placeholder {
+    .search {
         display: none;
     }
 }
@@ -506,20 +507,46 @@ aside, footer {
     }
 
     .logo-img {
-        max-width: 40%;
+        min-width: 7em;
+        max-width: 7em;
     }
 
-    .search-placeholder {
+    /* -----SEARCH-----*/
+    .search {
+        width: 100%;
+        min-width: 20rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        padding: 0 2em;
     }
 
-    .search-img {
-        max-width: 50%;
-        display: grid;
-        align-items: center;
+    .search-input {
+        width: 100%;
+        border: 2px solid #01648B;
+        border-right: none;
+        padding: 5px;
+        height: 36px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color:#9DBFAF;
     }
+
+    .search-input:focus {
+        color:#01648B;
+    }
+
+    .search-button {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #01648B;
+        background: #01648B;
+        text-align: center;
+        color: #FFF;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
 
     /* -----CONTENT LAYOUT----- */
 
@@ -532,9 +559,17 @@ aside, footer {
         grid-column: 1/4;
     }
 
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .nav-link {
         white-space: nowrap;
         padding: 0 1.5rem;
+        font-size: 1.3rem;
     }
 
     main {
@@ -544,8 +579,6 @@ aside, footer {
     }
 
     .title-container {
-        /*width: 43%;
-        height: 50%;*/
         width: 40rem;
         height: 20rem;
         padding: 3rem;
@@ -561,7 +594,6 @@ aside, footer {
     .title-container h1 {
         width: 100%;
         font-size: 3rem;
-        /*padding-bottom: 2rem;*/
     }
 
     .title-container p {
