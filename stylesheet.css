@@ -632,6 +632,34 @@ aside, footer {
         grid-column: 1/4;
     }
 
+    .about-us-container {
+        display: flex;
+        align-items: center;
+        height: 30rem;
+        margin: 0 23rem;
+        padding: 2rem 0;
+    }
+
+    .about-us-img {
+        display: block;
+        min-width: 27rem;
+        max-width: 27rem;
+    }
+
+    .about-us-text {
+        display: block;
+        margin-right: 2rem;
+        background-color: #FFFFFF;
+        height: 18.15rem;
+        width: 42rem;
+        padding: 4rem;
+    }
+
+    .about-us-text p {
+        padding: 1.5rem 0 0 0;
+        line-height: 1.7rem;
+    }
+
     /* aside three styles */
     .aside-three-weekly-deal {
         grid-column: 1/4;
