@@ -752,5 +752,10 @@ aside, footer {
     /* footer styles */
     footer {
         grid-column: 1/4;
+        padding: 1.8rem 1rem;
+    }
+
+    .footer-container {
+        padding: 0 1.7rem;
     }
 }
