@@ -34,7 +34,6 @@ img {
 /* -----HAMBURGER MENU----- */
 /* header and navbar style */
 .header {
-    border-bottom: 1px solid black;
     background-color: #FFFFFF;
 }
 
@@ -316,6 +315,10 @@ main {
     padding: 12rem 5rem 1rem 0;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
 /* padding for all aside elements and footer element */
 aside, footer {
     padding: 2.2em 1em;
@@ -584,7 +587,7 @@ aside, footer {
 
     .title-container {
         width: 45rem;
-        height: 20rem;
+        height: 18rem;
         padding: 3rem;
         margin-left: 8rem;
         border: 2px solid #FFFFFF;
