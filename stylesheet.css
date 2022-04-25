@@ -689,6 +689,66 @@ aside, footer {
         grid-column: 1/4;
     }
 
+    .aside-four-newsletter figure img {
+        display:block;
+    }
+
+    .left-signup-image {
+        width: 33rem;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+    
+    .right-signup-image {
+        width: 33rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .newsletter-signup-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40rem;
+        height: 18rem;
+        padding: 2.5rem 3.5rem;
+    }
+
+    .newsletter-signup-container h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .newsletter-signup-container p {
+        line-height: 1.7rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .email-button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signup-box {
+        width: 17em;
+        height: 3rem;
+        margin: 0;
+        padding: 0 0 0 0.5rem;
+    }
+
+    .signup-button {
+        width: 8em;
+        height: 3rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* footer styles */
     footer {
         grid-column: 1/4;
