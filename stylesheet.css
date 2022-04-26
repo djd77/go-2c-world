@@ -266,20 +266,12 @@ footer {
 }
 
 /* =============== BACKGROUND IMAGES MOBILE ( < 48rem ) =============== */
-/* home page background */
+/* home page backgrounds */
 main {
     background-image: url(./images/woman-background-1.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 300% auto;
-}
-
-/* country page background */
-.main-country {
-    background-image: url(./images/brazil/beach.jpg);
-    background-repeat: no-repeat;
-    background-position: middle;
-    background-size: cover;
 }
 
 .aside-three-weekly-deal {
@@ -288,6 +280,24 @@ main {
     background-position: -15rem 0;
     background-size: 300% auto;
 }
+
+/* country page backgrounds */
+.main-country {
+    background-image: url(./images/brazil/beach.jpg);
+    background-repeat: no-repeat;
+    background-position: middle;
+    background-size: cover;
+}
+
+/* city page backgrounds */
+.main-city {
+    background-image: url(./images/brasilia/brasilia_skyline.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 500% auto;
+}
+
+
 
 /* =============== IMAGES =============== */
 
@@ -503,7 +513,7 @@ aside, footer {
 /* layout for larger screens */
 @media only screen and (min-width: 48rem) {
     /* =============== BACKGROUND IMAGES =============== */
-    /* home page background */
+    /* home page backgrounds */
     main {
         background-image: url(./images/woman-background-1.jpg);
         background-repeat: no-repeat;
@@ -511,7 +521,14 @@ aside, footer {
         background-size: cover;
     }
 
-    /* country page background */
+    .aside-three-weekly-deal {
+        background-image: url(./images/woman-background-2.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+
+    /* country page backgrounds */
     .main-country {
         background-image: url(./images/brazil/beach.jpg);
         background-repeat: no-repeat;
@@ -519,10 +536,11 @@ aside, footer {
         background-size: cover;
     }
     
-    .aside-three-weekly-deal {
-        background-image: url(./images/woman-background-2.jpg);
+    /* city page backgrounds */
+    .main-city {
+        background-image: url(./images/brasilia/brasilia_skyline.jpg);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: bottom left;
         background-size: cover;
     }
 
