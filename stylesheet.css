@@ -1,4 +1,4 @@
-/* RESET */
+/* =============== RESET =============== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
 
@@ -15,10 +15,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
     box-sizing: border-box;
 }
 
-/* == END RESET =========================================== */
+/* =============== END RESET =============== */
 
 
-/* -----LAYOUT----- */
+/* =============== LAYOUT =============== */
 /* Default layout design for mobile */
 
 /* Set padding so that content is not against edge of viewport */
@@ -31,7 +31,7 @@ img {
     max-width: 100%;
 }
 
-/* -----HAMBURGER MENU----- */
+/* =============== HAMBURGER MENU =============== */
 /* header and navbar style */
 .header {
     background-color: #FFFFFF;
@@ -81,7 +81,7 @@ img {
 }
 
 
-/* -----VERTICAL SECTION HEIGHT----- */
+/* =============== VERTICAL SECTION HEIGHT =============== */
 /* Set min height so background image is visible */
 main {
     min-height: 50rem;
@@ -92,7 +92,7 @@ main {
 }
 
 
-/* -----TYPOGRAPHY----- */
+/* =============== TYPOGRAPHY =============== */
 
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -194,7 +194,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* -----COLOURS AND BORDERS----- */
+/* =============== COLOURS AND BORDERS =============== */
 
 /* main font = #01648B */
 /* light font = #FFFFFF */
@@ -256,7 +256,7 @@ footer {
     background-color: #eef2f2;
 }
 
-/* -----LINK AND BUTTON HOVER----- */
+/* =============== LINK AND BUTTON HOVER =============== */
 .footer-right ul li a:hover {
     color: #86DBBB;
 }
@@ -265,13 +265,21 @@ footer {
     background-color:#86DBBB;
 }
 
-/* -----BACKGROUND IMAGES----- */
-
+/* =============== BACKGROUND IMAGES MOBILE ( < 48rem ) =============== */
+/* home page background */
 main {
     background-image: url(./images/woman-background-1.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 300% auto;
+}
+
+/* country page background */
+.main-country {
+    background-image: url(./images/brazil/beach.jpg);
+    background-repeat: no-repeat;
+    background-position: middle;
+    background-size: cover;
 }
 
 .aside-three-weekly-deal {
@@ -281,7 +289,7 @@ main {
     background-size: 300% auto;
 }
 
-/* -----IMAGES----- */
+/* =============== IMAGES =============== */
 
 /* logo in header */
 .logo-img {
@@ -299,7 +307,7 @@ main {
     width: 70%;
 }
 
-/* -----SECTION AND CONTAINER LAYOUTS----- */
+/* =============== SECTION AND CONTAINER LAYOUTS MOBILE ( < 48rem ) =============== */
 
 /* main layout */
 main {
@@ -426,7 +434,7 @@ aside, footer {
     padding-top: 1.5rem;
 }
 
-/* -----RESPONSIVENESS----- */
+/* =============== RESPONSIVENESS =============== */
 
 /* hide search bar on small screens */
 @media (max-width: 48rem) {
@@ -494,9 +502,18 @@ aside, footer {
 
 /* layout for larger screens */
 @media only screen and (min-width: 48rem) {
-    /* -----IMAGES----- */
+    /* =============== BACKGROUND IMAGES =============== */
+    /* home page background */
     main {
         background-image: url(./images/woman-background-1.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+
+    /* country page background */
+    .main-country {
+        background-image: url(./images/brazil/beach.jpg);
         background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
@@ -509,13 +526,15 @@ aside, footer {
         background-size: cover;
     }
 
+
+    /* =============== LOGO =============== */
     .logo-img {
         margin: 0 1em;
         min-width: 7em;
         max-width: 7em;
     }
 
-    /* -----SEARCH-----*/
+    /* =============== SEARCH =============== */
     .search {
         width: 40rem;
         display: flex;
@@ -552,7 +571,7 @@ aside, footer {
     }
 
 
-    /* -----CONTENT LAYOUT----- */
+    /* =============== CONTENT LAYOUT =============== */
 
     body {
         display: grid;
