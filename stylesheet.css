@@ -615,13 +615,14 @@ aside, footer {
     }
 
 
-    /* main styles */
+    /* ----------main styles---------- */
     main {
         grid-column: 1/4;
         display: flex;
         align-items: center;
     }
 
+    /* home page title container and children */
     .title-container {
         width: 45rem;
         height: 18rem;
@@ -646,7 +647,26 @@ aside, footer {
         padding: 0;
     }
 
-    /* aside one styles */
+    /* country page title container and children */
+    .title-container-country {
+        width: 33rem;
+        height: 15rem;
+        padding: 4rem 3rem;
+        margin-left: 8rem;
+        border: 2px solid #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .title-container-country h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    /* ----------aside one styles---------- */
     .aside-one-content-overview {
         grid-column: 2/3;
     }
