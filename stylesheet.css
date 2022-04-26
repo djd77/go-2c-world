@@ -222,7 +222,11 @@ header {
 .aside-three-weekly-deal {
     color: #FFFFFF;
 }
-/* buttons */
+
+.icon {
+    color: #86DBBB;
+}
+
 .deal-button {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -235,7 +239,7 @@ header {
     background-color: transparent;
 }
 
-/* text box */
+
 .signup-box {
     color: #01648B;
     border: 1px solid #01648B;
@@ -326,11 +330,12 @@ main {
 }
 
 .title-container {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .title-container p {
-    padding: 12rem 5rem 1rem 0;
+    width: 15rem;
+    padding: 15rem 0 1rem 0;
 }
 
 .bold-text {
@@ -339,7 +344,7 @@ main {
 
 /*country page*/
 .title-container-country {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .title-container-country h1 {
@@ -692,10 +697,6 @@ aside, footer {
         width: 18em;
     }
 
-    .icon {
-        color: #86DBBB;
-    }
-
     /* country page aside and children */
     .aside-one-country-overview {
         grid-column: 2/3;
@@ -732,6 +733,20 @@ aside, footer {
     .about-us-text p {
         padding: 1.5rem 0 0 0;
         line-height: 1.7rem;
+    }
+
+    /* country aside two styles */
+
+    .aside-two-country-video {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .placeholder {
+        border: 1px solid #01648B;
+        width: 45rem;
+        height: 25rem;
     }
 
     /* aside three styles */
