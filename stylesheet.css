@@ -458,7 +458,7 @@ aside, footer {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
-        left: -100%;
+        right: 100%;
         top: 5rem;
         flex-direction: column;
         background-color:#FFFFFF;
@@ -466,7 +466,7 @@ aside, footer {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
     }
 
     
