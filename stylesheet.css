@@ -337,6 +337,15 @@ main {
     font-weight: bold;
 }
 
+/*country page*/
+.title-container-country {
+    padding: 1.5rem 3rem;
+}
+
+.title-container-country h1 {
+    padding: 1rem 0 2rem 0;
+}
+
 /* padding for all aside elements and footer element */
 aside, footer {
     padding: 2.2em 1em;
