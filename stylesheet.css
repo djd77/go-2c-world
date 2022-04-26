@@ -667,6 +667,7 @@ aside, footer {
     }
 
     /* ----------aside one styles---------- */
+    /* home page aside and children */
     .aside-one-content-overview {
         grid-column: 2/3;
     }
@@ -682,9 +683,13 @@ aside, footer {
         width: 18em;
     }
 
-    .icon {
-        height: 8em;
-        width: auto;
+    /* country page aside and children */
+    .aside-one-country-overview {
+        grid-column: 2/3;
+    }
+
+    .fa-solid {
+        color: #86DBBB;
     }
 
     /* aside two styles */
