@@ -683,13 +683,13 @@ aside, footer {
         width: 18em;
     }
 
+    .icon {
+        color: #86DBBB;
+    }
+
     /* country page aside and children */
     .aside-one-country-overview {
         grid-column: 2/3;
-    }
-
-    .fa-solid {
-        color: #86DBBB;
     }
 
     /* aside two styles */
