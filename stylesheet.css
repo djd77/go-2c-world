@@ -375,16 +375,16 @@ aside, footer {
 }
 
 /* country aside one */
-.country-info p {
+.overview-info p {
     padding-bottom: 1rem;
 }
 
-.country-image {
+.overview-image {
     display: flex;
     justify-content: center;
 }
 
-.country-image img {
+.overview-image img {
     display: block;
     width: 85%;
     border-radius: 2rem;
@@ -736,7 +736,7 @@ aside, footer {
     }
 
     /* country aside one */
-    .aside-one-country-overview {
+    .aside-one-overview {
         grid-column: 2/3;
         display: flex;
         justify-content: space-between;
@@ -744,23 +744,23 @@ aside, footer {
         margin: 4rem 1.5rem;
     }
 
-    .country-info {
+    .overview-info {
         width: 40rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .country-info p {
+    .overview-info p {
         line-height: 1.6rem;
         padding: 1rem;
     }
 
-    .country-image img {
+    .overview-image img {
         width: 100%;
     }
 
-    .country-image {
+    .overview-image {
         width: 35rem;
         height: auto;
     }
