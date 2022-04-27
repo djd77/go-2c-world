@@ -219,6 +219,10 @@ header {
     background-color: #eef2f2;
 }
 
+.aside-two-country-video {
+    background-color: #eef2f2;
+}
+
 .aside-three-weekly-deal {
     color: #FFFFFF;
 }
@@ -681,7 +685,7 @@ aside, footer {
     }
 
     /* ----------aside one styles---------- */
-    /* home page aside and children */
+    /* home aside one */
     .aside-one-content-overview {
         grid-column: 2/3;
     }
@@ -697,12 +701,39 @@ aside, footer {
         width: 18em;
     }
 
-    /* country page aside and children */
+    /* country aside one */
     .aside-one-country-overview {
         grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 4rem 0;
     }
 
-    /* aside two styles */
+    .country-info {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .country-info p {
+        line-height: 1.6rem;
+        padding: 1rem;
+    }
+
+    .country-image {
+        display: block;
+        width: 35rem;
+        height: auto;
+    }
+
+    .country-image img {
+        border-radius: 2rem;
+    }
+
+    /* ----------aside two styles---------- */
+    /* home aside two */
     .aside-two-about-us {
         grid-column: 1/4;
     }
@@ -749,7 +780,7 @@ aside, footer {
         height: 25rem;
     }
 
-    /* aside three styles */
+    /* ----------aside three styles---------- */
     .aside-three-weekly-deal {
         grid-column: 1/4;
         display: flex;
@@ -773,7 +804,7 @@ aside, footer {
         width: 15rem;
     }
 
-    /* aside four styles */
+    /* ----------aside four styles---------- */
     .aside-four-newsletter {
         grid-column: 1/4;
     }
@@ -838,7 +869,7 @@ aside, footer {
         justify-content: center;
     }
 
-    /* footer styles */
+    /* ----------footer styles---------- */
     footer {
         grid-column: 1/4;
         padding: 1.8rem 1rem;
