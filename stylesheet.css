@@ -411,6 +411,22 @@ aside, footer {
     height: 15rem;
 }
 
+/* city aside two */
+.aside-two-city-images {
+    background-color: #eef2f2;
+}
+
+.city-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-image {
+    display: block;
+    width: 85%;
+    padding: 1rem 0;
+}
 
 /* ----------aside three layout---------- */
 /* home aside three */
@@ -811,6 +827,23 @@ aside, footer {
     .placeholder {
         width: 45rem;
         height: 25rem;
+    }
+
+    /* city aside two */
+    .aside-two-city-images {
+        grid-column: 1/4;
+    }
+
+    .city-images-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .city-image {
+        width: 100%;
+        padding: 0 1rem;
+        height: 28rem;
+        object-fit: cover;
     }
 
     /* ----------aside three styles---------- */
