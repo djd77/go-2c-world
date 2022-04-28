@@ -381,7 +381,7 @@ main {
     padding-bottom: 1rem;
 }
 
-.title-accommodation p {
+.title-accommodation h3 {
     padding: 0;
     color:#01648B;
 }
@@ -837,6 +837,23 @@ aside, footer {
         padding-bottom: 2.5rem;
     }
 
+    /* accommodation main */
+    .title-accommodation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid #01648B;
+    }
+
+    .title-accommodation h1 {
+        padding-bottom: 2rem;
+    }
+
+    .title-accommodation h3 {
+        padding-bottom: 0.8rem;
+    }
+
     /* ----------aside one styles---------- */
     /* home aside one */
     .aside-one-content-overview {
@@ -882,6 +899,13 @@ aside, footer {
     .overview-image {
         width: 35rem;
         height: auto;
+    }
+
+    /* accommodation asides */
+
+    .accommodation-one, .accommodation-two, .accommodation-three {
+        grid-column: 1/4;
+        display: flex;
     }
 
     
