@@ -312,6 +312,14 @@ main {
     background-size: 500% auto;
 }
 
+/* accommodation page background */
+.accommodation-main {
+    background-image: url(./images/accommodation/door.jpg);
+    background-repeat: no-repeat;
+    background-position: middle;
+    background-size: cover;
+}
+
 
 
 /* =============== IMAGES =============== */
@@ -362,6 +370,22 @@ main {
     padding: 1rem 0 2rem 0;
 }
 
+/* accommodation page */
+.title-accommodation {
+    height: 20rem;
+}
+
+.title-accommodation h1 {
+    font-size: 9vw;
+    color:#01648B;
+    padding-bottom: 1rem;
+}
+
+.title-accommodation p {
+    padding: 0;
+    color:#01648B;
+}
+
 /* padding for all aside elements and footer element */
 aside, footer {
     padding: 2.2em 1em;
@@ -395,6 +419,35 @@ aside, footer {
     display: block;
     width: 85%;
     border-radius: 2rem;
+}
+
+/* accommodation asides */
+
+.accommodation-two {
+    background-color: #eef2f2;
+}
+
+.title-box h2 {
+    padding-bottom: 1rem;
+}
+
+.location-box h3 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.feature-box h3 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.price-box h3 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.image-box {
+    border: 1px solid #01648B;
+    margin: 1rem 0;
+    padding: 5rem 0;
+
 }
 
 /* ----------aside two layout---------- */
