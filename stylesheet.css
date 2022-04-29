@@ -328,7 +328,14 @@ main {
     background-size: cover;
 }
 
+/* restaurant page background */
 
+.restaurants-main {
+    background-image: url(./images/restaurants/restaurant-main.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
 
 /* =============== IMAGES =============== */
 
