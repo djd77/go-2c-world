@@ -337,6 +337,15 @@ main {
     background-size: cover;
 }
 
+/* weather page background */
+.weather-main {
+    background-image: url(./images/weather/weather-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
 /* =============== IMAGES =============== */
 
 /* logo in header */
