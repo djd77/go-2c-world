@@ -320,6 +320,14 @@ main {
     background-size: cover;
 }
 
+/* attraction page background */
+.attractions-main {
+    background-image: url(./images/attractions/attractions_title_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
 
 
 /* =============== IMAGES =============== */
@@ -818,7 +826,7 @@ aside, footer {
         padding: 0;
     }
 
-    /* country page title container and children */
+    /* country page main */
     .title-container-country {
         width: 33rem;
         height: 15rem;
@@ -851,6 +859,22 @@ aside, footer {
     }
 
     .title-accommodation h3 {
+        padding-bottom: 0.8rem;
+    }
+
+    /* attractions main */
+    .title-attractions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .title-attractions h1 {
+        padding-bottom: 2rem;
+    }
+
+    .title-attractions h3 {
         padding-bottom: 0.8rem;
     }
 
