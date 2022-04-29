@@ -293,14 +293,12 @@ main {
 .main-country {
     background-image: url(./images/brazil/beach.jpg);
     background-repeat: no-repeat;
-    background-position: middle;
     background-size: cover;
 }
 
 .aside-links {
     background-image: url(./images/brazil/beach3.jpg);
     background-repeat: no-repeat;
-    background-position: middle;
     background-size: cover;
 }
 
@@ -316,7 +314,6 @@ main {
 .accommodation-main {
     background-image: url(./images/accommodation/door.jpg);
     background-repeat: no-repeat;
-    background-position: middle;
     background-size: cover;
 }
 
@@ -623,6 +620,16 @@ aside, footer {
     font-weight: 300;
 }
 
+/* weather aside */
+.season h2 {
+    text-align: left;
+}
+
+.season h3 {
+    font-weight: normal;
+    padding-bottom: 0.2rem;
+}
+
 /* ----------footer layout---------- */
 .footer-container {
     display: flex;
@@ -817,7 +824,7 @@ aside, footer {
         align-items: center;
     }
 
-    /* home page title container and children */
+    /* home page main */
     .title-container {
         width: 45rem;
         height: 18rem;
@@ -903,7 +910,6 @@ aside, footer {
     .icons-container {
         display: flex;
         justify-content: space-between;
-        align-items: top;
         padding: 5em 0;
     }
 
@@ -1148,7 +1154,6 @@ aside, footer {
         height: 30rem;
         width: 62rem;
         flex-wrap: wrap;
-        align-items: space-between;
     }
 
 
