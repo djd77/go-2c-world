@@ -83,11 +83,11 @@ img {
 
 /* =============== VERTICAL SECTION HEIGHT =============== */
 /* Set min height so background image is visible */
-main {
+section {
     min-height: 50rem;
 }
 
-.aside-three-weekly-deal {
+.aside-weekly-deal {
     min-height: 50rem;
 }
 
@@ -126,7 +126,7 @@ ul {
 }
 
 
-/* main text */
+/* title section text */
 .title-container h1 {
     font-size: 12vw;
     line-height: 1.5em;
@@ -215,15 +215,15 @@ header {
 }
 
 
-.aside-two-about-us {
+.aside-about-us {
     background-color: #eef2f2;
 }
 
-.aside-two-country-video {
+.country-video {
     background-color: #eef2f2;
 }
 
-.aside-three-weekly-deal {
+.aside-weekly-deal {
     color: #FFFFFF;
 }
 
@@ -275,14 +275,14 @@ footer {
 
 /* =============== BACKGROUND IMAGES MOBILE ( < 48rem ) =============== */
 /* home page backgrounds */
-main {
+section {
     background-image: url(./images/woman-background-1.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 300% auto;
 }
 
-.aside-three-weekly-deal {
+.aside-weekly-deal {
     background-image: url(./images/woman-background-2.jpg);
     background-repeat: no-repeat;
     background-position: -15rem 0;
@@ -290,7 +290,7 @@ main {
 }
 
 /* country page backgrounds */
-.main-country {
+.title-country {
     background-image: url(./images/brazil/beach.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -298,21 +298,37 @@ main {
 
 
 /* city page backgrounds */
-.main-city {
+.title-city {
     background-image: url(./images/brasilia/brasilia_skyline.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 500% auto;
 }
 
-/* accommodation page background */
-.accommodation-main {
+/* accommodation page backgrounds */
+.accommodation-main-title {
     background-image: url(./images/accommodation/door.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* attraction page background */
+.b-hotel {
+    background-image: url(./images/accommodation/b_hotel/b_hotel_room.jpg);
+    background-size: cover;
+}
+
+.casa-do {
+    background-image: url(./images/accommodation/casa_do_lago/casa_do_room.jpg);
+    background-size: cover;
+}
+
+.joy-hostel {
+    background-image: url(./images/accommodation/joy_hostel/joy_dorm.jpg);
+    background-size: cover;
+}
+
+
+/* attraction page backgrounds */
 .attractions-main {
     background-image: url(./images/attractions/attractions_title_bg.jpg);
     background-repeat: no-repeat;
@@ -320,12 +336,42 @@ main {
     background-size: cover;
 }
 
-/* restaurant page background */
+.catetinho {
+    background-image: url(./images/attractions/catetinho/catetinho-sign.jpg);
+    background-size: cover;
+}
+
+.feira {
+    background-image: url(./images/attractions/importados/entrance.jpg);
+    background-size: cover;
+}
+
+.wish-tree {
+    background-image: url(./images/attractions/newsstand/wish.jpg);
+    background-size: cover;
+}
+
+/* restaurant page backgrounds */
 
 .restaurants-main {
     background-image: url(./images/restaurants/restaurant-main.jpg);
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
+}
+
+.bsb-grill {
+    background-image: url(./images/restaurants/bsb/bsb.JPG);
+    background-size: cover;
+}
+
+.coco {
+    background-image: url(./images/restaurants/coco/coco.jpg);
+    background-size: cover;
+}
+
+.landi {
+    background-image: url(./images/restaurants/landi/landi.JPG);
     background-size: cover;
 }
 
@@ -346,20 +392,23 @@ main {
     max-width: 6em;
 }
 
-/* icons in aside two */
+
 .icon {
     width: 45%;
 }
 
-/* images in aside four */
 .left-signup-image, .right-signup-image {
     width: 70%;
 }
 
+.b-hotel, .casa-do, .joy-hostel {
+    height: 10rem;
+}
+
 /* =============== SECTION AND CONTAINER LAYOUTS MOBILE ( < 48rem ) =============== */
 
-/* ----------main layout---------- */
-main {
+/* ----------title section layout---------- */
+section {
     padding: 2.2em 1em;
     color: #FFFFFF;
 }
@@ -415,8 +464,7 @@ aside, footer {
     padding: 2.2em 1em;
 }
 
-/* ----------aside one layout---------- */
-/* home aside one */
+
 .icons-container {
     padding: 0 2.6em;
 }
@@ -429,20 +477,9 @@ aside, footer {
     padding: 0.8rem 0 0.8rem 0;
 }
 
-/* country aside one */
+
 .overview-info p {
     padding-bottom: 1rem;
-}
-
-.overview-image {
-    display: flex;
-    justify-content: center;
-}
-
-.overview-image img {
-    display: block;
-    width: 85%;
-    border-radius: 2rem;
 }
 
 .title-box h2 {
@@ -466,14 +503,12 @@ aside, footer {
 }
 
 .image-box {
-    border: 1px solid #01648B;
     margin: 1rem 0;
-    padding: 5rem 0;
-
+    height: 15rem;
 }
 
-/* ----------aside two layout---------- */
-/* home aside two */
+
+
 .about-us-container {
     padding: 1.2em 2.6em;
 }
@@ -486,16 +521,16 @@ aside, footer {
     padding: 1.3em 0 2.2em 0;
 }
 
-/* country aside two */
 .placeholder {
     border: 1px solid #01648B;
     width: 25rem;
     height: 15rem;
 }
 
-/* city aside two */
-.aside-two-city-images {
+.image-gallery {
     background-color: #eef2f2;
+    display: flex;
+    justify-content: center;
 }
 
 .city-images-container {
@@ -510,9 +545,9 @@ aside, footer {
     padding: 1rem 0;
 }
 
-/* ----------aside three layout---------- */
-/* home aside three */
-.aside-three-weekly-deal {
+
+
+.aside-weekly-deal {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -533,13 +568,7 @@ aside, footer {
     width: 100%;
 }
 
-/* country aside three */
-.aside-three-country-expectations h2 {
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
-}
 
-/* ----------aside four layout---------- */
 .aside-four-newsletter {
     position: relative;
     display: flex;
@@ -584,9 +613,10 @@ aside, footer {
 }
 
 
-/* weather aside */
 .season h2 {
+    font-weight: bold;
     text-align: left;
+    padding-bottom: 0.3rem;
 }
 
 .season h3 {
@@ -675,14 +705,14 @@ aside, footer {
 @media only screen and (min-width: 48rem) {
     /* =============== BACKGROUND IMAGES =============== */
     /* home page backgrounds */
-    main {
+    section {
         background-image: url(./images/woman-background-1.jpg);
         background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
     }
 
-    .aside-three-weekly-deal {
+    .aside-weekly-deal {
         background-image: url(./images/woman-background-2.jpg);
         background-repeat: no-repeat;
         background-position: left;
@@ -690,7 +720,7 @@ aside, footer {
     }
 
     /* country page backgrounds */
-    .main-country {
+    .title-country {
         background-image: url(./images/brazil/beach.jpg);
         background-repeat: no-repeat;
         background-position: left;
@@ -699,7 +729,7 @@ aside, footer {
 
     
     /* city page backgrounds */
-    .main-city {
+    .title-city {
         background-image: url(./images/brasilia/brasilia_skyline.jpg);
         background-repeat: no-repeat;
         background-position: bottom left;
@@ -777,14 +807,14 @@ aside, footer {
     }
 
 
-    /* ----------main styles---------- */
-    main {
+    /* ----------main title section styles---------- */
+    section {
         grid-column: 1/4;
         display: flex;
         align-items: center;
     }
 
-    /* home page main */
+    /* home page title section */
     .title-container {
         width: 45rem;
         height: 18rem;
@@ -809,7 +839,7 @@ aside, footer {
         padding: 0;
     }
 
-    /* country page main */
+    /* country page title section */
     .title-container-country {
         width: 33rem;
         height: 15rem;
@@ -828,7 +858,7 @@ aside, footer {
         padding-bottom: 2.5rem;
     }
 
-    /* accommodation main */
+    /* accommodation title section */
     .title-accommodation {
         display: flex;
         flex-direction: column;
@@ -845,7 +875,7 @@ aside, footer {
         padding-bottom: 0.8rem;
     }
 
-    /* attractions main */
+    /* attractions title section */
     .title-attractions {
         display: flex;
         flex-direction: column;
@@ -863,7 +893,7 @@ aside, footer {
 
     /* ----------aside one styles---------- */
     /* home aside one */
-    .aside-one-content-overview {
+    .content-overview {
         grid-column: 2/3;
     }
 
@@ -878,7 +908,7 @@ aside, footer {
     }
 
     /* country aside one */
-    .aside-one-overview {
+    .main-info {
         grid-column: 2/3;
         display: flex;
         justify-content: space-between;
@@ -903,8 +933,10 @@ aside, footer {
     }
 
     .overview-image {
-        width: 35rem;
+        width: 30rem;
         height: auto;
+        display: flex;
+        align-items: center;
     }
 
 
@@ -923,11 +955,8 @@ aside, footer {
         justify-content: space-between;
     }
 
-    
-
-    /* ----------aside two styles---------- */
-    /* home aside two */
-    .aside-two-about-us {
+    /* home aside 'about us'' */
+    .aside-about-us {
         grid-column: 1/4;
     }
 
@@ -960,7 +989,7 @@ aside, footer {
     }
 
     /* country aside two styles */
-    .aside-two-country-video {
+    .country-video {
         grid-column: 1/4;
         display: flex;
         justify-content: center;
@@ -972,7 +1001,7 @@ aside, footer {
     }
 
     /* city aside two */
-    .aside-two-city-images {
+    .image-gallery {
         grid-column: 1/4;
     }
 
@@ -988,9 +1017,9 @@ aside, footer {
         object-fit: cover;
     }
 
-    /* ----------aside three styles---------- */
-    /* home aside three */
-    .aside-three-weekly-deal {
+    
+    /* home aside weekly deals */
+    .aside-weekly-deal {
         grid-column: 1/4;
         display: flex;
         justify-content: right;
@@ -1014,16 +1043,6 @@ aside, footer {
     }
 
     /* country aside three */
-    .aside-three-country-expectations {
-        grid-column: 2/3;
-        margin: 0 5rem;
-    }
-
-
-    .expectations-container {
-        display: flex;
-        justify-content: space-around;
-    }
 
     .expectation {
         padding: 2rem;
