@@ -22,7 +22,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* Default layout design for mobile */
 
 /* Set padding so that content is not against edge of viewport */
-header, nav, main, aside, footer {
+header, nav, main, aside, footer, section {
     padding: 1em;
 }
 
@@ -402,6 +402,14 @@ main {
     color:#01648B;
 }
 
+/* accommodation, attractions, restaurants layout */
+.item-layout {
+    padding-top: 0;
+}
+.content-item {
+    padding-top: 2.5rem;
+}
+
 /* padding for all aside elements and footer element */
 aside, footer {
     padding: 2.2em 1em;
@@ -437,12 +445,6 @@ aside, footer {
     border-radius: 2rem;
 }
 
-/* accommodation asides */
-
-.accommodation-two {
-    background-color: #eef2f2;
-}
-
 .title-box h2 {
     padding-bottom: 1rem;
 }
@@ -456,6 +458,10 @@ aside, footer {
 }
 
 .price-box h3 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.more-info-link h3 {
     padding: 1.5rem 0 0.5rem 0;
 }
 
@@ -901,11 +907,20 @@ aside, footer {
         height: auto;
     }
 
-    /* accommodation asides */
 
-    .accommodation-one, .accommodation-two, .accommodation-three {
-        grid-column: 1/4;
+
+    /* accommodation, activity, restaurant asides */
+    .item-layout {
+        grid-column: 2/3;
         display: flex;
+    }
+
+    .content-item {
+        padding: 2.5rem 1.5rem 0 1.5rem;
+        width: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     
