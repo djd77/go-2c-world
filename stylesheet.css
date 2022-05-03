@@ -296,11 +296,6 @@ main {
     background-size: cover;
 }
 
-.aside-links {
-    background-image: url(./images/brazil/beach3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* city page backgrounds */
 .main-city {
@@ -582,43 +577,6 @@ aside, footer {
     width: 70%;
 }
 
-/*cities aside four*/
-.cities-links-container {
-    min-height: 30rem;
-    max-width: 26rem;
-}
-
-.links-cities-title {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-}
-.links-cities-title h2 {
-    font-weight: 700;
-    color:#FFFFFF;
-    padding-bottom: 1rem;
-}
-
-.links-cities-title p {
-    color: #FFFFFF;
-}
-
-.link-city-description {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-bottom: 0.8rem;
-    padding: 0.5rem;
-}
-
-.link-city-description a {
-    color: #FFFFFF;
-    font-size: 1.2rem;
-}
-
-.link-city-description p {
-    color: #FFFFFF;
-    font-size: 1rem;
-    font-weight: 300;
-}
 
 /* weather aside */
 .season h2 {
@@ -733,10 +691,6 @@ aside, footer {
         background-size: cover;
     }
 
-    .aside-links {
-        background-position: left;
-    }
-    
     
     /* city page backgrounds */
     .main-city {
@@ -1124,38 +1078,6 @@ aside, footer {
         align-items: center;
         justify-content: center;
     }
-
-    /*country aside four*/
-    .aside-links {
-        grid-column: 1/4;
-        padding: 4rem 0 0 10rem;
-    }
-
-
-    .link-city-description {
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        background-color: rgba(255, 255, 255, 0.7);
-        width: 30rem;
-    }
-
-    .link-city-description a {
-        color:#01648B;
-        font-weight: bold;
-    }
-
-    .link-city-description p {
-        color:#01648B;
-        font-weight: normal;
-    }
-
-    .links-cities {
-        display: flex;
-        flex-direction: column;
-        height: 30rem;
-        width: 62rem;
-        flex-wrap: wrap;
-    }
-
 
     /* ----------footer styles---------- */
     footer {
