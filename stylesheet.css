@@ -93,7 +93,7 @@ section {
 
 
 /* =============== TYPOGRAPHY =============== */
-
+/* general typography */
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
     line-height: 1.5rem;
@@ -125,6 +125,7 @@ ul {
     list-style-type: none;
 }
 
+/* page titles */
 .title-container h1 {
     font-size: 12vw;
     line-height: 1.5em;
@@ -136,14 +137,17 @@ ul {
     font-weight: 500;
 }
 
+/* container holding icon and text */
 .single-icon-container h3 {
     font-weight: bold;
 }
 
+/* index.html about us */
 .about-us-text h2 {
     font-weight: bold;
 }
 
+/* index.html weekly deal */
 .weekly-deal-container h3 {
     font-weight: 500;
     font-size: 1.8rem;
@@ -156,6 +160,7 @@ ul {
     font-weight: 500;
 }
 
+/* index.html newsletter signup */
 .newsletter-signup-container p {
     line-height: 1.5rem;
 }
@@ -171,19 +176,27 @@ ul {
     font-weight: 500;
 }
 
-
+/* index.html main title span bold */
 .bold-text {
     font-weight: bold;
 }
 
+/* accommodation.html title */
 .title-accommodation h1 {
     font-size: 9vw;
 }
 
+/* accommodation, attractions, and restaurant heading inside content-item */
+.title-box h2 {
+    line-height: 1.8rem;
+}
+
+/* index.html newsletter signup */
 .signup-box {
     font-size:1.3rem;
 }
 
+/* weather.html season names */
 .season h2 {
     font-weight: bold;
     text-align: left;
@@ -216,6 +229,7 @@ footer {
 /* about us and footer background #eef2f2 */
 /* shadow colour = #535353 */
 
+/* general colours */
 body {
     color: #01648B;
 }
@@ -228,23 +242,36 @@ header {
     background-color: #FFFFFF;
 }
 
+footer {
+    background-color: #eef2f2;
+}
 
+section {
+    color: #FFFFFF;
+}
+
+/* index.html about us */
 .aside-about-us {
     background-color: #eef2f2;
 }
 
+/* country.html */
 .country-video {
     background-color: #eef2f2;
 }
 
+/* index.html weekly deal */
 .aside-weekly-deal {
     color: #FFFFFF;
 }
 
+/* colouring for all icons */
 .icon {
     color: #86DBBB;
 }
 
+/* index.html buttons */
+/* not actually buttons, just look like they are */
 .deal-button {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -257,7 +284,7 @@ header {
     background-color: transparent;
 }
 
-
+/* index.html newsletter */
 .signup-box {
     color: #01648B;
     border: 1px solid #01648B;
@@ -274,14 +301,7 @@ header {
     box-shadow: 0 0 0.6em #535353;
 }
 
-footer {
-    background-color: #eef2f2;
-}
-
-section {
-    color: #FFFFFF;
-}
-
+/* change colour of titles on pages with light backgrounds */
 .title-accommodation h1 {
     color:#01648B;
 }
@@ -861,6 +881,12 @@ aside, footer {
     .about-us-text {
         background-color: #FFFFFF;
     }
+    /* accommodation, attractions, and restaurant content boxes */
+    .content-item {
+        background-color:#FFFFFF;
+        border: 2px solid #01648B;
+        box-shadow: 0 0 0.6em #535353;
+    }
 
     /* =============== CONTENT LAYOUT =============== */
     /* general layout */
@@ -1008,9 +1034,10 @@ aside, footer {
         grid-column: 2/3;
         display: flex;
     }
-
+    /* accommodation, attractions, and restaurant content boxes */
     .content-item {
-        padding: 2.5rem 1.5rem 0 1.5rem;
+        padding: 2rem 1.5rem 1rem 1.5rem;
+        margin: 2rem 1rem;
         width: 25em;
         display: flex;
         flex-direction: column;
@@ -1171,7 +1198,7 @@ aside, footer {
         align-items: center;
         justify-content: center;
     }
-
+    
     /* footer layout, all pages */
     footer {
         grid-column: 1/4;
