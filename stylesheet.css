@@ -418,21 +418,18 @@ section {
     max-width: 6em;
 }
 
+/* icon size */
 .icon {
     width: 45%;
 }
 
+/* index.html, leaves in newsletter signup section */
 .left-signup-image, .right-signup-image {
     width: 70%;
 }
 
-.b-hotel, .casa-do, .joy-hostel {
-    height: 10rem;
-}
-
 /* =============== SECTION AND CONTAINER LAYOUTS MOBILE ( < 48rem ) =============== */
-
-/* ----------title section layout---------- */
+/* -----top section that contains main page heading----- */
 section {
     padding: 2.2em 1em;
 }
@@ -481,6 +478,7 @@ aside, footer {
     padding: 2.2em 1em;
 }
 
+/* layout for icons and info */
 .icons-container {
     padding: 0 2.6em;
 }
@@ -493,10 +491,12 @@ aside, footer {
     padding: 0.8rem 0 0.8rem 0;
 }
 
+/* country.html, city.html overview */
 .overview-info p {
     padding-bottom: 1rem;
 }
 
+/* layout for accommodation, attractions, and restaurant info */
 .title-box h2 {
     padding-bottom: 1rem;
 }
@@ -522,6 +522,7 @@ aside, footer {
     height: 15rem;
 }
 
+/* index.html about-us */
 .about-us-container {
     padding: 1.2em 2.6em;
 }
@@ -534,7 +535,7 @@ aside, footer {
     padding: 1.3em 0 2.2em 0;
 }
 
-/* these are placeholders */
+/* $these are placeholders */
 .placeholder {
     border: 1px solid #01648B;
     width: 25rem;
@@ -548,6 +549,7 @@ aside, footer {
 }
 /* end placeholders */
 
+/* city.html image gallery */
 .city-images-container {
     display: flex;
     flex-direction: column;
@@ -560,6 +562,7 @@ aside, footer {
     padding: 1rem 0;
 }
 
+/* index.html weekly deal */
 .aside-weekly-deal {
     display: flex;
     align-items: end;
@@ -575,12 +578,14 @@ aside, footer {
     padding: 1.5em 0;
 }
 
+/* not actually a button, just looks like one */
 .deal-button {
     display: block;
     padding: 1em 0;
     width: 100%;
 }
 
+/* index.html newsletter signup */
 .aside-four-newsletter {
     position: relative;
     display: flex;
@@ -620,12 +625,14 @@ aside, footer {
     width: 100%;
 }
 
+/* not actually a button, just looks like one */
 .signup-button {
     display: block;
     padding: 0.7em 0;
     width: 70%;
 }
 
+/* weather.html, icon container layout */
 .season h2 {
     padding-bottom: 0.3rem;
 }
@@ -647,15 +654,17 @@ aside, footer {
 
 /* =============== RESPONSIVENESS =============== */
 
-/* hide search bar on small screens */
-@media (max-width: 48rem) {
+/* Hides the search bar on small screens */
+/* Might put the search bar inside the hamburger menu on 
+   small screens if I have time */
+@media (max-width: 64em) {
     .search {
         display: none;
     }
 }
 
-/* hamburger menu responsive */
-@media only screen and (max-width: 48rem) {
+/* Responsiveness for hamburger menu */
+@media only screen and (max-width: 48em) {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
@@ -672,8 +681,8 @@ aside, footer {
 
     
     .nav-menu.active {
-        /* JS uses this to add the 'active' class to the nav-menu
-        which shows the menu when hamburger is clicked */
+        /* JS uses this for the 'active' class it adds/removes to/from the 
+           nav-menu element when user touches/clicks the hamburger button*/
         left: 0;
         padding: 2rem;
     }
@@ -696,7 +705,7 @@ aside, footer {
     }
 
     /* use "active" class on hamburger to create animation when the
-    hamburger menu is clicked */
+    hamburger menu is touched/clicked */
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -710,39 +719,43 @@ aside, footer {
     }
 
 }
-
-/* layout for larger screens */
-@media only screen and (min-width: 48rem) {
+/* =============== TABLET SIZED SCREEN LAYOUT =============== */
+/*
+@media only screen and (min-width: 40em){
     /* =============== BACKGROUND IMAGES =============== */
-    /* home page backgrounds */
+
+    /* =============== TYPOGRAPHY =============== */
+
+    /* =============== COLOURS AND BORDERS =============== */
+
+    /* =============== CONTENT LAYOUT =============== */
+    
+/*}*/
+
+
+
+/* =============== DESKTOP SIZED SCREEN LAYOUT =============== */
+@media only screen and (min-width: 64em) {
+    /* =============== BACKGROUND IMAGES =============== */
+    /* Only changes in this section should be for background image positioning, etc. */
+    /* --home page backgrounds-- */
     section {
-        background-image: url(./images/woman-background-1.jpg);
-        background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
     }
 
     .aside-weekly-deal {
-        background-image: url(./images/woman-background-2.jpg);
-        background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
     }
 
-    /* country page backgrounds */
+    /* --country page background-- */
     .title-country {
-        background-image: url(./images/brazil/beach.jpg);
-        background-repeat: no-repeat;
         background-position: left;
-        background-size: cover;
     }
 
-    
-    /* city page backgrounds */
+    /* --city page background-- */
     .title-city {
-        background-image: url(./images/brasilia/brasilia_skyline.jpg);
-        background-repeat: no-repeat;
-        background-position: bottom left;
         background-size: cover;
     }
 
@@ -791,6 +804,7 @@ aside, footer {
     }
 
     /* =============== TYPOGRAPHY =============== */
+    /* -----top section that contains main page heading----- */
     .title-container h1 {
         font-size: 3.4rem;
     }
@@ -802,15 +816,17 @@ aside, footer {
     .title-container-country h1 {
         font-size: 3.5rem;
     }
-
+    /* country.html, city.html overview layout */
     .overview-info p {
         line-height: 1.6rem;
     }
 
+    /* index. aside-about-us */
     .about-us-text p {
         line-height: 1.7rem;
     }
 
+    /* index. text for weekly deal and newsletter signup */
     .weekly-deal-container h3 {
         font-weight: 600;
         line-height: 1.6em;
@@ -819,7 +835,9 @@ aside, footer {
     .newsletter-signup-container p {
         line-height: 1.7rem;
     }
+
     /* =============== COLOURS AND BORDERS =============== */
+    /* -----top section that contains main page heading----- */
     .title-container {
         border: 2px solid #FFFFFF;
         background-color: rgba(0, 0, 0, 0.4);
@@ -839,11 +857,13 @@ aside, footer {
         background-color: transparent;
     }
 
+    /* index. aside-about-us */
     .about-us-text {
         background-color: #FFFFFF;
     }
-    /* =============== CONTENT LAYOUT =============== */
 
+    /* =============== CONTENT LAYOUT =============== */
+    /* general layout */
     body {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
@@ -854,6 +874,13 @@ aside, footer {
         padding: 0.3rem 1rem;
     }
 
+    section {
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+    }
+
+    /* nav layout */
     .navbar {
         width: 100%;
         display: flex;
@@ -866,12 +893,7 @@ aside, footer {
         font-size: 1.2rem;
     }
 
-    section {
-        grid-column: 1/4;
-        display: flex;
-        align-items: center;
-    }
-
+    /* -----top section that contains main page heading----- */
     .title-container {
         width: 45rem;
         height: 18rem;
@@ -892,7 +914,6 @@ aside, footer {
         padding: 0;
     }
 
-    /* country page title section */
     .title-container-country {
         width: 33rem;
         height: 15rem;
@@ -936,6 +957,7 @@ aside, footer {
         padding-bottom: 0.8rem;
     }
 
+    /* layout for icons and info */
     .content-overview {
         grid-column: 2/3;
     }
@@ -950,6 +972,7 @@ aside, footer {
         width: 18em;
     }
 
+    /* country.html, city.html main section layout  */
     .main-info {
         grid-column: 2/3;
         display: flex;
@@ -980,6 +1003,7 @@ aside, footer {
         align-items: center;
     }
 
+    /* accommodation, attractions, restaurant main section layout */
     .item-layout {
         grid-column: 2/3;
         display: flex;
@@ -993,6 +1017,7 @@ aside, footer {
         justify-content: space-between;
     }
 
+    /* index. layout for 'about us' text and image */
     .aside-about-us {
         grid-column: 1/4;
     }
@@ -1023,7 +1048,7 @@ aside, footer {
         padding: 1.5rem 0 0 0;
     }
 
-    /* placeholders */
+    /* $placeholders */
     .country-video {
         grid-column: 1/4;
         display: flex;
@@ -1035,6 +1060,8 @@ aside, footer {
         height: 25rem;
     }
     /* end placeholders */
+
+    /* city.html, for image gallery */
     .image-gallery {
         grid-column: 1/4;
     }
@@ -1051,6 +1078,7 @@ aside, footer {
         object-fit: cover;
     }
 
+    /* index.html, weekly deal layout */
     .aside-weekly-deal {
         grid-column: 1/4;
         display: flex;
@@ -1072,10 +1100,12 @@ aside, footer {
         width: 15rem;
     }
 
+    /* country.html, page specific layout for single-icon-container*/
     .expectation {
         padding: 2rem;
     }
 
+    /* index.html, newsletter signup layout */
     .aside-four-newsletter {
         grid-column: 1/4;
     }
@@ -1142,6 +1172,7 @@ aside, footer {
         justify-content: center;
     }
 
+    /* footer layout, all pages */
     footer {
         grid-column: 1/4;
         padding: 1.8rem 1rem;
