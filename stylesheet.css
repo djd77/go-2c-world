@@ -1,7 +1,4 @@
 /* =============== RESET =============== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
-
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     /* Cancel out some differences between browser defaults */
     margin: 0;
@@ -93,6 +90,10 @@ section {
 
 
 /* =============== TYPOGRAPHY =============== */
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
+
 /* general typography */
 body {
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -505,6 +506,7 @@ aside, footer {
 
 .single-icon-container {
     padding: 2.3rem 3.2rem;
+	max-width: 28em;
 }
 
 .single-icon-container h3 {
@@ -592,6 +594,7 @@ aside, footer {
 
 .weekly-deal-container {
     padding: 0 1em 3em 1em;
+	max-width: 30em;
 }
 
 .weekly-deal-container h3 {
@@ -684,7 +687,7 @@ aside, footer {
 }
 
 /* Responsiveness for hamburger menu */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 64em) {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
@@ -739,18 +742,117 @@ aside, footer {
     }
 
 }
-/* =============== TABLET SIZED SCREEN LAYOUT =============== */
-/*
+/* =============== TABLET SIZED SCREEN LAYOUT 40em - 64em =============== */
+
 @media only screen and (min-width: 40em){
     /* =============== BACKGROUND IMAGES =============== */
-
+	section {
+        background-position: center;
+        background-size: cover;
+    }
+	
+	.aside-weekly-deal {
+        background-position: left;
+		background-size: cover;
+	}
+	
     /* =============== TYPOGRAPHY =============== */
+	/* -----top section that contains main page heading----- */
+    .title-container h1 {
+        font-size: 3.4rem;
+    }
 
+    .title-container p {
+        line-height: 2rem;
+    }
+	
     /* =============== COLOURS AND BORDERS =============== */
 
     /* =============== CONTENT LAYOUT =============== */
+    /* general layout */
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    header {
+        grid-column: 1/4;
+        padding: 0.3rem 1rem;
+    }
+
+    section {
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+    }
+	
+	main {
+		grid-column: 2/3;
+	}
+	
+	aside {
+		grid-column: 1/4;
+	}
+	
+	footer {
+		grid-column: 1/4;
+	}
+	
+	/* index. layout for 'about us' text and image */
+    .aside-about-us {
+        grid-column: 1/4;
+    }
+
+    .about-us-container {
+        padding: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    }
+	
+    .about-us-img {
+        display: block;
+        width: 30rem;
+		padding-top: 1rem;
+    }
+
+    .about-us-text {
+        width: 30rem;
+		padding: 0;
+    }
+
+    .about-us-text p {
+        padding: 1rem 0 1rem 0;
+    }
+	
+	/* index.html layout for newsletter signup */
+	.newsletter-signup-container {
+        max-width: 40rem;
+        height: auto;
+        padding: 2.5rem 3.5rem;
+    }
+	
+	/* leaves in newsletter signup section of index.html */
+    /* position and z-index ensures they stay behind everything else */
+    .left-signup-image {
+        max-width: 33rem;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
     
-/*}*/
+    .right-signup-image {
+        max-width: 33rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    /* end layout for leaves */
+	
+}
+
 
 
 
@@ -761,7 +863,6 @@ aside, footer {
     /* --home page backgrounds-- */
     section {
         background-position: left;
-        background-size: cover;
     }
 
     .aside-weekly-deal {
@@ -1051,13 +1152,15 @@ aside, footer {
 
     .about-us-container {
         display: flex;
+		flex-direction: row;
+		justify-content: center;
         align-items: center;
         height: 30rem;
-        margin: 0 23rem;
         padding: 2rem 0;
     }
 
     .about-us-img {
+		padding: 0;
         display: block;
         min-width: 27rem;
         max-width: 27rem;
@@ -1067,8 +1170,8 @@ aside, footer {
         display: block;
         margin-right: 2rem;
         height: 18.15rem;
-        width: 42rem;
-        padding: 4rem;
+		min-width: 32rem;
+        padding: 3rem;
     }
 
     .about-us-text p {
