@@ -880,6 +880,11 @@ aside, footer {
         background-size: cover;
     }
 
+    /* =============== VIDEO =============== */
+    #brazil-video {
+        width: 60em;
+        height: 34em;
+    }
 
     /* =============== LOGO =============== */
     .logo-img {
