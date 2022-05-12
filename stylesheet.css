@@ -785,7 +785,8 @@ aside, footer {
     }
 
     .title-container p {
-        line-height: 2rem;
+        line-height: 1.5rem;
+        font-size: 1.3rem;
     }
 	
     /* =============== COLOURS AND BORDERS =============== */
@@ -817,7 +818,7 @@ aside, footer {
 	footer {
 		grid-column: 1/4;
 	}
-	
+
 	/* index. layout for 'about us' text and image */
     .aside-about-us {
         grid-column: 1/4;
@@ -925,7 +926,7 @@ aside, footer {
 
     /* =============== SEARCH BAR =============== */
     .search {
-        width: 40rem;
+        width: 30rem;
         display: flex;
         align-items: center;
         padding: 0 2em;
@@ -1133,7 +1134,7 @@ aside, footer {
     .single-icon-container {
         width: 18em;
     }
-    
+
     /* country.html, city.html main section layout  */
     .main-info {
         grid-column: 2/3;
