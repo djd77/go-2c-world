@@ -871,6 +871,16 @@ aside, footer {
     }
     /* end layout for leaves */
 	
+    /* layout for icons */
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-icon-container {
+        max-width: 22em;
+    }
 }
 
 
@@ -1115,7 +1125,7 @@ aside, footer {
     }
 
     .icons-container {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         padding: 5em 0;
     }
@@ -1123,7 +1133,7 @@ aside, footer {
     .single-icon-container {
         width: 18em;
     }
-
+    
     /* country.html, city.html main section layout  */
     .main-info {
         grid-column: 2/3;
