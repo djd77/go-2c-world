@@ -449,6 +449,12 @@ section {
     width: 70%;
 }
 
+/* =============== VIDEO =============== */
+#brazil-video {
+    max-width: 30em;
+    height: 15em;
+}
+
 /* =============== SECTION AND CONTAINER LAYOUTS MOBILE ( < 48rem ) =============== */
 /* -----top section that contains main page heading----- */
 section {
@@ -756,6 +762,18 @@ aside, footer {
 		background-size: cover;
 	}
 	
+    /* =============== VIDEO =============== */
+    .country-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #brazil-video {
+        max-width: 60em;
+        height: 21em;
+    }
+
     /* =============== TYPOGRAPHY =============== */
 	/* -----top section that contains main page heading----- */
     .title-container h1 {
@@ -882,7 +900,7 @@ aside, footer {
 
     /* =============== VIDEO =============== */
     #brazil-video {
-        width: 60em;
+        max-width: 60em;
         height: 34em;
     }
 
