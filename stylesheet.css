@@ -762,6 +762,10 @@ aside, footer {
 		background-size: cover;
 	}
 	
+    .title-city {
+        background-size: 300%;
+    }
+    
     /* =============== VIDEO =============== */
     .country-video {
         display: flex;
@@ -800,8 +804,6 @@ aside, footer {
 
     section {
         grid-column: 1/4;
-        display: flex;
-        align-items: center;
     }
 	
 	main {
