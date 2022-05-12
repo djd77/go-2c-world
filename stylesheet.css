@@ -1127,6 +1127,7 @@ aside, footer {
 
     .icons-container {
         flex-direction: row;
+        align-items: initial;
         justify-content: space-between;
         padding: 5em 0;
     }
