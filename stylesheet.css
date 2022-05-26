@@ -529,6 +529,11 @@ section {
     padding: 1rem 0 2rem 0;
 }
 
+#brazil-video {
+    width: 100%;
+    height: auto;
+}
+
 /* accommodation page */
 .title-accommodation {
     height: 20rem;
@@ -916,6 +921,13 @@ input, textarea {
         grid-column: 1/4;
     }
 
+    .overview-info {
+        max-width: 40em;
+    }
+    .overview-image {
+        max-width: 40em;
+    }
+
     .weekly-deal-container {
         max-width: 35em;
         padding-top: 25em;
@@ -949,6 +961,17 @@ input, textarea {
     }
     /* end layout for leaves */
 
+    /* country page layout */
+    .country-video {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+    }
+
+    #brazil-video {
+        max-width: 40em;
+        height: auto;
+    }
     /* form layout tablet */
     .contact-main {
         grid-column: 2/3;
