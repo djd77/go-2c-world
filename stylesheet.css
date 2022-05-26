@@ -331,26 +331,22 @@ section {
 }
 
 /* ---------- form borders and colours ---------- */
-fieldset {
-	border: 1px solid #01648B;
+input, textarea {
+    outline: none;
+    border: 1px solid #01648B;
 }
 
 input:focus, textarea:focus {
-    outline: 1px solid #01648B;
+    outline: none;
+    border: 1px solid #01648B;
+    box-shadow: 0 0 0.5em #535353;
 }
 
 input:hover, textarea:hover {
     outline: none;
-    box-shadow: 0 0 0.2em #535353;
+    border: 1px solid #01648B;
+    box-shadow: 0 0 0.5em #535353;
 }
-
-
-
-/* change background colour on hover
-#name:hover, #subject:hover, #email:hover, #message:hover {
-	background-color: #86DBBB;
-}
-*/
 
 .form-submit-button {
 	border: 1px solid #01648B;
@@ -728,17 +724,8 @@ aside, footer {
     padding: 1.5rem 1rem;
 }
 
-.contact-aside {
-    padding: 1.5rem 1rem 1rem 1rem;
-}
-
-.contact-aside p {
-    padding: 0.5rem 0;
-    max-width: 32rem;
-}
-
 fieldset {
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1rem 0;
     max-width: 35rem;
 }
 
@@ -756,7 +743,7 @@ label {
 
 input, textarea {
     padding: 0.5rem;
-    width: 70%;
+    width: 100%;
 }
 
 .form-name, .form-subject-input, .form-email-input, .form-message-input, .form-submit-button {
@@ -772,6 +759,18 @@ input, textarea {
     height: 10rem;
 }
 
+.contact-aside {
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+.contact-aside h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-aside p {
+    padding: 0.5rem 0;
+    max-width: 32rem;
+}
 
 /* ----------footer layout---------- */
 .footer-container {
@@ -852,7 +851,7 @@ input, textarea {
 
 }
 /* =============== TABLET SIZED SCREEN LAYOUT =============== */
-/*
+
 @media only screen and (min-width: 40em){
     /* =============== BACKGROUND IMAGES =============== */
 
@@ -861,8 +860,32 @@ input, textarea {
     /* =============== COLOURS AND BORDERS =============== */
 
     /* =============== CONTENT LAYOUT =============== */
-    
-/*}*/
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    header {
+        grid-column: 1/4;
+    }
+
+    section {
+        grid-column: 1/4;
+    }
+
+    footer {
+        grid-column: 1/4;
+    }
+
+    /* form layout tablet */
+    .contact-main {
+        grid-column: 2/3;
+    }
+
+    .contact-aside {
+        grid-column: 2/3;
+    }
+}
 
 
 
