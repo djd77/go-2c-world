@@ -80,6 +80,98 @@ img {
     color:#86DBBB;
 }
 
+/* =======GALLERY======= */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* size of images */
+.mySlides img {
+	max-height: 30em;
+}
 
 /* =============== VERTICAL SECTION HEIGHT =============== */
 /* Set min height so background image is visible */
@@ -207,13 +299,18 @@ ul {
 }
 
 /* ---------- form text ---------- */
-input, textarea {
-    font-family: inherit;
-    font-size: inherit;
-}
 
 legend {
-    font-size: 2rem;
+	font-size: 2rem;
+}
+
+.form-submit-button {
+	font-size: 1em;
+}
+
+#name-first, #name-last, #subject, #email, #message {
+	font-size: 1.2em;
+	font-family: "Open Sans", "Roboto", sans-serif;
 }
 
 /* footer text */
@@ -222,8 +319,9 @@ footer {
 }
 
 .mandatory-text {
-    font-size: 0.9rem;
+	font-size: 1em;
 }
+
 
 /* footer text */
 
@@ -266,10 +364,6 @@ section {
     color: #FFFFFF;
 }
 
-.contact-main {
-    background-color: #eef2f2;
-}
-
 /* index.html about us */
 .aside-about-us {
     background-color: #eef2f2;
@@ -291,6 +385,7 @@ section {
 }
 
 /* index.html buttons */
+/* not actually buttons, just look like they are */
 .deal-button {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -330,21 +425,12 @@ section {
 }
 
 /* ---------- form borders and colours ---------- */
-input, textarea {
-    outline: none;
-    border: 1px solid #01648B;
-}
 
-input:focus, textarea:focus {
-    outline: none;
-    border: 1px solid #01648B;
-    box-shadow: 0 0 0.5em #535353;
-}
-
-input:hover, textarea:hover {
-    outline: none;
-    border: 1px solid #01648B;
-    box-shadow: 0 0 0.5em #535353;
+#name-first, #name-last, #subject, #email, #message {
+	border: none;
+	border: 1px solid #01648B;
+	background-color: #FFFFFF;
+	color: #01648B;
 }
 
 .form-submit-button {
@@ -480,12 +566,6 @@ section {
     background-size: cover;
 }
 
-.contact-bg {
-    background-image: url(./images/contact/contact-bg1.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
 
 /* =============== IMAGES =============== */
 
@@ -527,11 +607,6 @@ section {
 
 .title-container-country h1 {
     padding: 1rem 0 2rem 0;
-}
-
-#brazil-video {
-    width: 100%;
-    height: auto;
 }
 
 /* accommodation page */
@@ -623,13 +698,13 @@ aside, footer {
     width: 25rem;
     height: 15rem;
 }
-
+/* end placeholders */
 .image-gallery {
     background-color: #eef2f2;
     display: flex;
     justify-content: center;
 }
-/* end placeholders */
+
 
 /* city.html image gallery */
 .city-images-container {
@@ -660,6 +735,7 @@ aside, footer {
     padding: 1.5em 0;
 }
 
+/* not actually a button, just looks like one */
 .deal-button {
     display: block;
     padding: 1em 0;
@@ -672,11 +748,6 @@ aside, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.aside-four-newsletter figure img {
-    display: block;
 }
 
 /* leaves in newsletter signup section of index.html */
@@ -728,56 +799,42 @@ aside, footer {
 }
 
 /* ---------- form layout ---------- */
-.contact-main {
-    padding: 1.5rem 1rem;
-}
-
 fieldset {
-    padding: 1rem 0;
-    max-width: 35rem;
+	padding: 0.7em;
 }
 
-form {
-    width: 100%;
-    max-width: 32rem;
-    margin: auto;
+legend {
+	padding: 0 0.3rem;
 }
 
-label {
-    width: 8rem;
-    display: block;
-    float: left;
+#name-first, #name-last, #subject, #email, #message {
+	padding: 0.5em;
+	width: 15em;
 }
 
-input, textarea {
-    padding: 0.5rem;
-    width: 100%;
+.form-names p {
+	padding: 0.5em 0 0 0;
 }
 
-.form-name, .form-subject-input, .form-email-input, .form-message-input, .form-submit-button {
-    margin-top: 1.5rem;
+.form-subject-input {
+	padding-bottom: 1em;
+}
+
+.form-email-input {
+	padding-bottom: 1em;
+}
+
+.form-message-input {
+	padding-bottom: 1em;
 }
 
 .form-submit-button {
-    width: 8rem;
-    padding: 0.5rem 2rem;
+	width: 8em;
+	height: 3em;
 }
 
-.form-message-input textarea {
-    height: 10rem;
-}
-
-.contact-aside {
-    padding: 1.5rem 1rem 1rem 1rem;
-}
-.contact-aside h2 {
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-}
-
-.contact-aside p {
-    padding: 0.5rem 0;
-    max-width: 32rem;
+.mandatory-text {
+	padding-top: 0.8em;
 }
 
 /* ----------footer layout---------- */
@@ -803,7 +860,7 @@ input, textarea {
 }
 
 /* Responsiveness for hamburger menu */
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 48em) {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
@@ -818,6 +875,7 @@ input, textarea {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 
+    
     .nav-menu.active {
         /* JS uses this for the 'active' class it adds/removes to/from the 
            nav-menu element when user touches/clicks the hamburger button*/
@@ -858,129 +916,17 @@ input, textarea {
 
 }
 /* =============== TABLET SIZED SCREEN LAYOUT =============== */
-
+/*
 @media only screen and (min-width: 40em){
     /* =============== BACKGROUND IMAGES =============== */
-    section {
-        background-position: center;
-        background-size: cover;
-    }
 
-    .aside-weekly-deal {
-        background-position: left;
-        background-size: cover;
-    }
     /* =============== TYPOGRAPHY =============== */
-    .title-container h1 {
-        font-size: 3.5rem;
-    }
 
     /* =============== COLOURS AND BORDERS =============== */
 
     /* =============== CONTENT LAYOUT =============== */
-    body {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-    }
-
-    header {
-        grid-column: 1/4;
-    }
-
-    section {
-        grid-column: 1/4;
-    }
-
-    main {
-        grid-column: 2/3;
-    }
-
-    aside {
-        grid-column: 2/3;
-    }
-
-    footer {
-        grid-column: 1/4;
-    }
-
-    /* home page layout */
-    .title-container {
-        width: 80%;
-    }
-
-    .title-container p {
-        margin: 0;
-    }
-
-    .about-us-container {
-        max-width: 40rem;
-        margin: auto;
-    }
-
-    .aside-about-us, .aside-weekly-deal, .aside-four-newsletter {
-        grid-column: 1/4;
-    }
-
-    .overview-info {
-        max-width: 40em;
-    }
-    .overview-image {
-        max-width: 40em;
-    }
-
-    .weekly-deal-container {
-        max-width: 35em;
-        padding-top: 25em;
-        margin: auto;
-    }
-
-    .about-us-img {
-        width: 40em;
-    }
-
-    .newsletter-signup-container {
-        max-width: 40rem;
-    }
-
-    /* leaves in newsletter signup section of index.html */
-    /* position and z-index ensures they stay behind everything else */
-    .left-signup-image {
-        width: 33rem;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-    }
     
-    .right-signup-image {
-        width: 33rem;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-    }
-    /* end layout for leaves */
-
-    /* country page layout */
-    .country-video {
-        grid-column: 1/4;
-        display: flex;
-        justify-content: center;
-    }
-
-    #brazil-video {
-        max-width: 40em;
-        height: auto;
-    }
-    /* form layout tablet */
-    .contact-main {
-        grid-column: 2/3;
-    }
-
-    .contact-aside {
-        grid-column: 2/3;
-    }
-}
+/*}*/
 
 
 
@@ -990,6 +936,11 @@ input, textarea {
     /* Only changes in this section should be for background image positioning, etc. */
     /* --home page backgrounds-- */
     section {
+        background-position: left;
+        background-size: cover;
+    }
+
+    .aside-weekly-deal {
         background-position: left;
         background-size: cover;
     }
@@ -1208,9 +1159,6 @@ input, textarea {
         padding-bottom: 0.8rem;
     }
 
-    .deal-button {
-        width: 13em;
-    }
     /* layout for icons and info */
     .content-overview {
         grid-column: 2/3;
@@ -1280,7 +1228,6 @@ input, textarea {
     .about-us-container {
         display: flex;
         align-items: center;
-        max-width: fit-content;
         height: 30rem;
         margin: 0 23rem;
         padding: 2rem 0;
@@ -1304,6 +1251,7 @@ input, textarea {
         padding: 1.5rem 0 0 0;
     }
 
+    /* $placeholders */
     .country-video {
         grid-column: 1/4;
         display: flex;
@@ -1364,8 +1312,29 @@ input, textarea {
     .aside-four-newsletter {
         grid-column: 1/4;
     }
+
+    .aside-four-newsletter figure img {
+        display:block;
+    }
     
-    /*||*/
+    /* leaves in newsletter signup section of index.html */
+    /* position and z-index ensures they stay behind everything else */
+    .left-signup-image {
+        width: 33rem;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+    
+    .right-signup-image {
+        width: 33rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    /* end layout for leaves */
 
     .newsletter-signup-container {
         display: flex;
