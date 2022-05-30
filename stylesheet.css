@@ -692,21 +692,31 @@ aside, footer {
     padding: 1.3em 0 2.2em 0;
 }
 
-/* $these are placeholders */
+/* $placeholders */
 .placeholder {
     border: 1px solid #01648B;
     width: 25rem;
     height: 15rem;
 }
 /* end placeholders */
+
+.overview-image, .overview-info {
+    max-width: 30rem;
+    height: auto;
+}
+
+.single-icon-container {
+    max-width: 30rem;
+    margin: auto;
+}
+
+/* city.html image gallery */
 .image-gallery {
     background-color: #eef2f2;
     display: flex;
     justify-content: center;
 }
 
-
-/* city.html image gallery */
 .city-images-container {
     display: flex;
     flex-direction: column;
@@ -860,7 +870,7 @@ legend {
 }
 
 /* Responsiveness for hamburger menu */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 64em) {
     .nav-menu {
         /* hides nav menu */
         position: fixed;
@@ -916,17 +926,24 @@ legend {
 
 }
 /* =============== TABLET SIZED SCREEN LAYOUT =============== */
-/*
+
 @media only screen and (min-width: 40em){
     /* =============== BACKGROUND IMAGES =============== */
-
+    .title-city {
+        background-size: cover;
+    }
     /* =============== TYPOGRAPHY =============== */
 
     /* =============== COLOURS AND BORDERS =============== */
 
     /* =============== CONTENT LAYOUT =============== */
-    
-/*}*/
+    .overview-image, .overview-info {
+        max-width: 30rem;
+        height: auto;
+        margin: auto;
+    }
+
+}
 
 
 
@@ -1168,6 +1185,7 @@ legend {
         display: flex;
         justify-content: space-between;
         padding: 5em 0;
+        margin: 0;
     }
 
     .single-icon-container {
