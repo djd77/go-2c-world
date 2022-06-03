@@ -1126,6 +1126,11 @@ input, textarea {
 		margin: auto;
 		width: 30em;
 	}
+
+    .container-contact {
+        max-width: 30em;
+        margin: 0 auto;
+    }
 	
 	/* city image gallery */
 	.image-gallery {
@@ -1590,6 +1595,7 @@ input, textarea {
     }
 
     .container-contact {
+        max-width: 100%;
         display: flex;
         border: 1px solid #01648B;
         padding: 1em 1.5em;
