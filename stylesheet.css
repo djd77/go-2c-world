@@ -874,6 +874,15 @@ input, textarea {
     max-width: 32rem;
 }
 
+.contact-form-image  {
+    display: none;
+}
+
+.person-image {
+    display: block;
+    padding-top: 1em;
+}
+
 .item-layout {
 	margin: auto;
 }
@@ -1106,10 +1115,12 @@ input, textarea {
 		margin: auto;
 		width: 30em;
 	}
+
 	
     .contact-aside {
         grid-column: 2/3;
     }
+
 	
 	.contact-text {
 		margin: auto;
@@ -1552,7 +1563,7 @@ input, textarea {
 	.contact-main {
         grid-column: 1/4;
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		padding: 1em 10%;
     }
@@ -1564,6 +1575,7 @@ input, textarea {
 	}
 	
 	.contact-form-image {
+        display: block;
 		width: 23em;
 		height: auto;
 		margin-left: 1em;
@@ -1572,13 +1584,22 @@ input, textarea {
     .contact-aside {
         grid-column: 1/4;
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		padding: 1em 10%;
+    }
+
+    .container-contact {
+        display: flex;
+        border: 1px solid #01648B;
+        padding: 1em 1.5em;
+        margin: 2em 0;
+        box-shadow: 0 0 0.6em #535353;
     }
 	
 	.contact-text {
 		margin: 0;
+        margin-right: 1em;
 		width: 30em;
 	}
     
