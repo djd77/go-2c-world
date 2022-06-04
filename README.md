@@ -16,18 +16,18 @@ Responsive Design made using HTML, CSS, and some JavaScript
 ### Country Page
 - https://www.pexels.com/photo/aerial-shot-of-coastal-area-3968211/
 - https://unsplash.com/photos/0mfj0jJt0dY
-#### Video
-- https://www.pexels.com/video/sea-shore-in-porto-de-galinhas-11952729/
+    #### Video
+    - https://www.pexels.com/video/sea-shore-in-porto-de-galinhas-11952729/
 
 ### City Page
 - https://www.pexels.com/photo/city-skyline-under-blue-sky-9304147/
 - https://www.pexels.com/photo/an-aerial-photography-of-the-jk-bridge-in-brasilia-brazil-9557560/
-#### Image Gallery
-- https://unsplash.com/photos/qL4tAM6uLvc
-- https://unsplash.com/photos/eC03m_R2RqI
-- https://unsplash.com/photos/KltkOfVW-LQ
-- https://unsplash.com/photos/wM8JvqyvYrg
-- https://unsplash.com/photos/vy5zUmmqzgM
+    #### Image Gallery
+    - https://unsplash.com/photos/qL4tAM6uLvc
+    - https://unsplash.com/photos/eC03m_R2RqI
+    - https://unsplash.com/photos/KltkOfVW-LQ
+    - https://unsplash.com/photos/wM8JvqyvYrg
+    - https://unsplash.com/photos/vy5zUmmqzgM
 
 ### Contact Us Page
 - https://www.pexels.com/photo/person-using-smartphone-shallow-focus-photography-215367/
